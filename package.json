@@ -5,15 +5,39 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --write '*.{js,ts,tsx,css,md}'",
+    "eslint": "eslint --cache --cache-location=node_modules/.cache/.eslintcache --fix",
+    "lint": "yarn run eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
+    "clsx": "^1.1.1",
+    "framer-motion": "^4.1.17",
+    "global": "^4.4.0",
     "next": "10.2.3",
+    "next-themes": "^0.0.14",
+    "postcss": "^8.3.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.1.4",
+    "use-sound": "^3.0.1"
   },
   "devDependencies": {
+    "@types/node": "^15.12.0",
     "@types/react": "17.0.9",
-    "typescript": "4.3.2"
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "chalk": "^4.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.3.2",
+    "url-loader": "^4.1.1"
   }
 }

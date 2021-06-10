@@ -1,0 +1,4 @@
+.next/**
+*/**/*.generated.ts
+
+# Barrel files
