@@ -63,7 +63,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
           </div>
         </div>
       </nav>
-      <main id="skip" className="flex flex-col justify-center bg-transparent">
+      <main id="skip" className=" flex flex-col justify-center bg-transparent">
         {children}
         <Footer />
       </main>

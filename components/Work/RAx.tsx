@@ -8,7 +8,7 @@ const stats = [
 
 export default function Example() {
   return (
-    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw]">
+    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
       <div className="lg:mx-auto lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div

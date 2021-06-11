@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto">
+    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
       <div className="py-16 xl:py-36 overflow-hidden">
         <div className="max-w-max  mx-auto">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">

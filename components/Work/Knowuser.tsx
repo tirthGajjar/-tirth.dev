@@ -8,7 +8,7 @@ const stats = [
 
 export default function Example() {
   return (
-    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw]">
+    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
       <div className="lg:mx-auto md:max-w-5xl lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overscroll-x-auto">
         <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}

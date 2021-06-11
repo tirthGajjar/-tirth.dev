@@ -11,7 +11,7 @@ const Home: React.FC = ({ children }) => {
     <Container>
       <div className="flex flex-col justify-center items-center mx-auto mb-16">
         {/* <div className="px-4 max-w-4xl flex flex-col justify-center items-start mx-auto mb-16"> */}
-        <div className=" min-h-screen py-20 flex flex-col items-center justify-center">
+        <div className="px-4 md:px-8 lg:px-0 min-h-screen py-20 flex flex-col items-center justify-center">
           <Intro />
           <SocialButtons />
         </div>
