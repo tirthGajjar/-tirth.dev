@@ -6,7 +6,7 @@ import Knowuser from "@/components/Work/Knowuser";
 // import Work from "@/components/Work";
 import RAx from "@/components/Work/RAx";
 
-const Home: React.FC = (props) => {
+const Home = () => {
   return (
     <Container>
       <div className="px-4 flex flex-col justify-center items-center mx-auto mb-16">

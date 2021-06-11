@@ -1,6 +1,7 @@
 import BlogLayout from "@/layouts/Blog";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
-import { FrontMatterPost, PostType } from "@/types/posts";
+import { PostType } from "@/types/posts";
+// import { FrontMatterPost } from "@/types/posts";
 import getOgImage from "lib/generate-opengraph-images";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { MDXRemote } from "next-mdx-remote";
@@ -8,13 +9,16 @@ import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
 import React from "react";
 
-interface BlogProps {
-  post?: FrontMatterPost;
-  ogImage: string;
-  //   tweets: Record<string, any>; // TODO: write types for tweets
-}
+// interface BlogProps {
+//   post?: FrontMatterPost;
+//   ogImage: string;
+//   //   tweets: Record<string, any>; // TODO: write types for tweets
+// }
 
-const Blog = ({ post, ogImage }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Blog = ({
+          post,
+          ogImage,
+        }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { isFallback } = useRouter();
 
   // If the page is not yet generated, this will be displayed
