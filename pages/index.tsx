@@ -6,7 +6,7 @@ import Knowuser from "@/components/Work/Knowuser";
 // import Work from "@/components/Work";
 import RAx from "@/components/Work/RAx";
 
-const Home = (props) => {
+const Home: React.FC = ({ children }) => {
   return (
     <Container>
       <div className="flex flex-col justify-center items-center mx-auto mb-16">
@@ -19,6 +19,7 @@ const Home = (props) => {
         {/* <Work /> */}
         <RAx></RAx>
         <Knowuser />
+        {children}
       </div>
     </Container>
   );
