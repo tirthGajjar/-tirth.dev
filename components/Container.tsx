@@ -25,7 +25,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-black min-h-screen">
+    <div className="bg-white dark:bg-black min-h-screen md:px-0">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -47,7 +47,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
         )}
       </Head>
       <nav className=" w-full my-0 text-gray-900 sticky-nav dark:text-gray-100">
-        <div className="flex items-center justify-between max-w-4xl w-full px-8 py-4 -mb-20 mx-auto">
+        <div className="flex items-center justify-between max-w-4xl w-full px-4 md:px-8 py-4 -mb-20 mx-auto">
           <a
             href="#skip"
             className="absolute px-4 py-2 transition-transform duration-200 transform -translate-y-12 focus:translate-y-3 -top-8"

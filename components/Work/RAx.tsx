@@ -49,7 +49,7 @@ export default function Example() {
               />
             </svg>
           </div>
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+          <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
             <div className="relative h-96 rounded-2xl shadow-xl overflow-hidden">
               <img

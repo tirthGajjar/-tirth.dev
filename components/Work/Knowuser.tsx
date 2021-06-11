@@ -9,7 +9,7 @@ const stats = [
 export default function Example() {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 ">
-      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div className="lg:mx-auto lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-6 sm:pt-4 lg:pt-8 space-y-2">
@@ -171,7 +171,7 @@ export default function Example() {
               />
             </svg>
           </div>
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+          <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
             <div className="relative h-96 rounded-2xl shadow-xl overflow-hidden">
               <img
