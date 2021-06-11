@@ -54,7 +54,7 @@ export default function Example() {
             <div className="relative h-96 rounded-2xl shadow-xl overflow-hidden">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
-                src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/18dc32ef-f800-424f-8897-74d62f004641/overview_diag.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210611T031536Z&X-Amz-Expires=86400&X-Amz-Signature=6f24a4c2c4e0e359ab18177d6b4a79ebb173294d773af75e84c36a00dc46bb83&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22overview_diag.jpg%22"
+                src="/rax-cover.jpg"
                 alt=""
               />
             </div>
@@ -144,17 +144,17 @@ export default function Example() {
                 <p className="text-base">
                   As a product architect, I redesigned the architecture to
                   achieve
-                  <span className="font-fancy font-medium italic text-red-500 dark:text-green-400 px-1">
+                  <span className="font-fancy font-semibold italic text-red-500 dark:text-green-400 px-1">
                     4 nines of availability,
                   </span>
                   improved scalability and achieved costs reductions up to{" "}
-                  <span className="font-fancy font-medium text-indigo-600 dark:text-yellow-400 text-lg">
+                  <span className="font-fancy font-semibold text-indigo-600 dark:text-yellow-400 text-lg">
                     34%
                   </span>
                   , using different AWS services and serverless-framework.
                 </p>
                 <p className="text-base">
-                  <span className="font-fancy font-medium text-red-500 dark:text-green-400 pr-1 italic">
+                  <span className="font-fancy font-semibold text-red-500 dark:text-green-400 pr-1 italic">
                     Created, led and mentored a team of 8 engineers
                   </span>
                   from 0 after filtering 500+ applications and conducting a

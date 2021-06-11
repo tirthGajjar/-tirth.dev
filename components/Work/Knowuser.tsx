@@ -176,7 +176,7 @@ export default function Example() {
             <div className="relative h-96 rounded-2xl shadow-xl overflow-hidden">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
-                src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a17c9952-a2ec-49df-91ac-a4bdeeab1981/Frame_78.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210611T084014Z&X-Amz-Expires=86400&X-Amz-Signature=00c706f5d55c1f7e6f471627915d1a716f01456c9847096ddeffd83bf356f9ab&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_78.jpg%22"
+                src="/knowuser-cover.jpg"
                 alt=""
               />
             </div>
