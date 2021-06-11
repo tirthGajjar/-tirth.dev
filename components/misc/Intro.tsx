@@ -6,10 +6,14 @@ function Intro(): ReactElement {
   return (
     <>
       <div className="prose mb-6 dark:prose-light md:prose-lg max-w-4xl">
-        <h1 className="mt-0">
-          Hey, I'm Tirth Gajjar <WavingHand />
+        <h1>
+          Hey,{" "}
+          <span className="block md:inline-block">
+            I'm Tirth Gajjar
+            <WavingHand />
+          </span>
         </h1>
-        <div className="my-6 text-2xl leading-10">
+        <div className="my-6 text-xl  md:text-2xl leading-10">
           I'm a
           <span className="font-fancy px-1 text-blue-600">
             product architect,

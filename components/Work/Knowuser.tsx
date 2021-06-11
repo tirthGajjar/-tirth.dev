@@ -8,8 +8,8 @@ const stats = [
 
 export default function Example() {
   return (
-    <div className="relative dark:text-indigo-100 py-16 sm:py-24 ">
-      <div className="lg:mx-auto lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw]">
+      <div className="lg:mx-auto md:max-w-5xl lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overscroll-x-auto">
         <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-6 sm:pt-4 lg:pt-8 space-y-2">
@@ -137,7 +137,7 @@ export default function Example() {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:left-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 left-1/2 w-full bg-gray-50 dark:bg-gray-900 rounded-l-3xl lg:left-72 " />
+            <div className="absolute inset-y-0 left-1/2 w-full bg-gray-50 dark:bg-gray-900 rounded-l-3xl lg:left-72" />
             <svg
               className="absolute top-8 right-1/2 -ml-3 lg:-left-8 lg:right-auto lg:top-12"
               width={404}
