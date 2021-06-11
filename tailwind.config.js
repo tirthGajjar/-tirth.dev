@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
@@ -23,68 +24,104 @@ module.exports = {
       },
       colors: {
         "yellow-opaque": "rgb(13 42 148 / 18%)",
+        lime: colors.lime,
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
+        fancy: ["Sriracha", "cursive", ...fontFamily.sans],
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray.700"),
-            a: {
-              color: theme("colors.blue.400"),
-              "&:hover": {
-                color: theme("colors.blue.700"),
-              },
-              code: { color: theme("colors.blue.400") },
+            h1: {
+              fontWeight: theme("fontWeight.bold"),
             },
-            "h2,h3,h4": {
-              "scroll-margin-top": spacing[32],
+            h2: {
+              fontWeight: theme("fontWeight.bold"),
             },
-            code: { color: theme("colors.pink.500") },
-            "blockquote p:first-of-type::before": false,
-            "blockquote p:last-of-type::after": false,
+            h3: {
+              fontWeight: theme("fontWeight.bold"),
+            },
+            h4: {
+              fontWeight: theme("fontWeight.bold"),
+            },
           },
         },
-        dark: {
+        xl: {
           css: {
-            color: theme("colors.gray.300"),
-            a: {
-              color: theme("colors.blue.200"),
-              "&:hover": {
-                color: theme("colors.blue.400"),
-              },
-              code: { color: theme("colors.blue.200") },
-            },
-            blockquote: {
-              borderLeftColor: theme("colors.gray.700"),
-              color: theme("colors.gray.300"),
-            },
-            "h2,h3,h4": {
-              color: theme("colors.gray.100"),
-              "scroll-margin-top": spacing[32],
-            },
-            hr: { borderColor: theme("colors.gray.700") },
-            ol: {
-              li: {
-                "&:before": { color: theme("colors.gray.500") },
-              },
-            },
-            ul: {
-              li: {
-                "&:before": { backgroundColor: theme("colors.gray.500") },
-              },
-            },
-            strong: { color: theme("colors.gray.300") },
-            thead: {
-              color: theme("colors.gray.100"),
-            },
-            tbody: {
-              tr: {
-                borderBottomColor: theme("colors.gray.700"),
-              },
+            pre: {
+              marginTop: 0,
             },
           },
+        },
+        lg: {
+          css: {
+            pre: {
+              marginTop: 0,
+            },
+          },
+        },
+        light: {
+          css: [
+            {
+              color: theme("colors.indigo.100"),
+              '[class~="lead"]': {
+                color: theme("colors.indigo.50"),
+              },
+              a: {
+                color: theme("colors.white"),
+              },
+              strong: {
+                color: theme("colors.white"),
+              },
+              "ol > li::before": {
+                color: theme("colors.indigo.100"),
+              },
+              "ul > li::before": {
+                backgroundColor: theme("colors.gray.600"),
+              },
+              hr: {
+                borderColor: theme("colors.gray.200"),
+              },
+              blockquote: {
+                color: theme("colors.gray.200"),
+                borderLeftColor: theme("colors.gray.600"),
+              },
+              h1: {
+                color: theme("colors.white"),
+              },
+              h2: {
+                color: theme("colors.white"),
+              },
+              h3: {
+                color: theme("colors.white"),
+              },
+              h4: {
+                color: theme("colors.white"),
+              },
+              "figure figcaption": {
+                color: theme("colors.gray.400"),
+              },
+              code: {
+                color: theme("colors.white"),
+              },
+              "a code": {
+                color: theme("colors.white"),
+              },
+              pre: {
+                color: theme("colors.gray.200"),
+                borderRadius: 0,
+                // backgroundColor: theme("colors.gray.800"),
+              },
+              thead: {
+                color: theme("colors.white"),
+                borderBottomColor: theme("colors.gray.400"),
+              },
+              "tbody tr": {
+                borderBottomColor: theme("colors.gray.600"),
+              },
+            },
+          ],
         },
       }),
     },

@@ -12,15 +12,38 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "Sriracha";
+  font-style: normal;
+  font-display: optional;
+  src: url(/fonts/Sriracha-Regular.ttf) format("ttf");
+}
 
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+*::selection {
+  background-color: rgba(5, 150, 105, 0.1);
+  text-shadow: 1px 1px 0 #065f46;
+  color: #059669;
+}
+
+h1::selection {
+  background-color: transparent;
+  text-shadow: 2px 3px 0 #3730a3;
+  color: #4f46e5;
+}
+
+div::selection {
+  font-weight: 500;
+
+  text-shadow: none;
 }
 
 html {
   min-width: 360px;
   scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden auto;
 }
 
 #__next {
@@ -229,16 +252,16 @@ table {
 }
 
 .github-clip {
-  transition: background 5s;
   clip-path: url(#github-clip);
 }
+
 .twitter-clip {
-  transition: background 1s;
   clip-path: url(#twitter-clip);
 }
+
 .clip-container:hover > .github-clip,
 .clip-container:hover > .twitter-clip {
   background: linear-gradient(-45deg, #ee7752, #bada55, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 4s ease infinite;
+  animation: gradient 2s ease infinite;
 }
