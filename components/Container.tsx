@@ -55,7 +55,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
             Skip to content
           </a>
 
-          {mounted && <ThemeSwitcher />}
+          {mounted ? <ThemeSwitcher /> : <div></div>}
           <div className="space-x-4">
             <NavLink href="/dashboard">Dashboard</NavLink>
             <NavLink href="/blog">Blog</NavLink>
