@@ -77,60 +77,58 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative lg:px-8 md:bg-opacity-90 dark:text-indigo-50 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 prose dark:prose-light md:prose-lg md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+            <div className="relative lg:px-16 md:bg-opacity-90 dark:text-indigo-50 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 prose dark:prose-light md:prose-lg md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-lg dark:text-indigo-100 font-normal lg:max-w-none">
                   <p>
-                    Ultrices ultricies a in odio consequat egestas rutrum. Ut
-                    vitae aliquam in ipsum. Duis nullam placerat cursus risus
-                    ultrices nisi, vitae tellus in. Qui non fugiat aut minus aut
-                    rerum. Perspiciatis iusto mollitia iste minima soluta id.
+                    I love to build great applications, and that has drove some
+                    major decisions in my career. Throughout my career, I have
+                    worked with various frontend frameworks (NextJS, React, Vue,
+                    NuxtJS), Browser Extensions, REST and GraphQL APIs, and
+                    Databases (PostgreSQL, MSSQL, DynamoDB, Redis).
                   </p>
                   <p>
-                    Erat pellentesque dictumst ligula porttitor risus eget et
-                    eget. Ultricies tellus felis id dignissim eget. Est augue{" "}
-                    <a href="#">maecenas</a> risus nulla ultrices congue nunc
-                    tortor. Eu leo risus porta integer suspendisse sed sit
-                    ligula elit.
+                    I started working as data engineer in my first job at MAQ
+                    Software, and then explored a lot of technologies through
+                    out my career. As I was very keen on learning new
+                    technologies and identifying use-cases, I got the
+                    opportunity to co-lead the tech-research team.
                   </p>
-                  <ol>
-                    <li>
-                      Integer varius imperdiet sed interdum felis cras in nec
-                      nunc.
-                    </li>
-                    <li>
-                      Quam malesuada odio ut sit egestas. Elementum at porta
-                      vitae.
-                    </li>
-                  </ol>
                   <p>
-                    Amet, eu nulla id molestie quis tortor. Auctor erat justo,
-                    sed pellentesque scelerisque interdum blandit lectus. Nec
-                    viverra amet ac facilisis vestibulum. Vestibulum purus nibh
-                    ac ultricies congue.
+                    My work at MAQ Software also taught me much about the
+                    engineering processes and leadership.
+                  </p>
+                  <p>
+                    To full-fill my product building dream, I joined SalesHandy
+                    as a Senior Software Engineer. My main focus was building
+                    the product's Chrome extension and help the team adopt best
+                    practices in terms of development, testing and tooling.
                   </p>
                 </div>
                 <div className="mt-6 prose dark:text-indigo-100 prose-lg font-normal lg:mt-0">
                   <p>
-                    Erat pellentesque dictumst ligula porttitor risus eget et
-                    eget. Ultricies tellus felis id dignissim eget. Est augue
-                    maecenas risus nulla ultrices congue nunc tortor.
+                    I have been wanting to create great products since the start
+                    of my graduation, I and my roommate in college used to
+                    discuss a lot of product building ideas.
                   </p>
                   <p>
-                    Eu leo risus porta integer suspendisse sed sit ligula elit.
-                    Elit egestas lacinia sagittis pellentesque neque dignissim
-                    vulputate sodales. Diam sed mauris felis risus, ultricies
-                    mauris netus tincidunt. Mauris sit eu ac tellus nibh non
-                    eget sed accumsan. Viverra ac sed venenatis pulvinar elit.
-                    Cras diam quis tincidunt lectus. Non mi vitae, scelerisque
-                    felis nisi, netus amet nisl.
+                    To put my product building knowledge to test, I started
+                    working on Knowuser with my roommate in college, Parag
+                    Chauhan.
                   </p>
                   <p>
-                    Eu eu mauris bibendum scelerisque adipiscing et. Justo,
-                    elementum consectetur morbi eros, posuere ipsum tortor. Eget
-                    cursus massa sed velit feugiat sed ut. Faucibus eros mauris
-                    morbi aliquam nullam. Scelerisque elementum sit magna
-                    ullamcorper dignissim pretium.
+                    As I started working on Knowuser, I got to learn about so
+                    much about product building and designing efficient
+                    solutions. I came across concepts like product-led growth
+                    and immediately got connected with it.
+                  </p>
+                  <p>
+                    At RAx Labs Inc., I had excellent experience building the
+                    entire tech-team from ground up, Revamping the most of
+                    application architecture to achieve auto-scaling
+                    capabilities and reduce costs. My area of focus were leading
+                    the team and maintaining the quality of technical
+                    implementations.
                   </p>
                 </div>
               </div>
