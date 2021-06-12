@@ -10,15 +10,15 @@ import { ParsedUrlQuery } from "querystring";
 import React from "react";
 
 // interface BlogProps {
-//   post?: FrontMatterPost;
-//   ogImage: string;
-//   //   tweets: Record<string, any>; // TODO: write types for tweets
+//  post?: FrontMatterPost;
+//  ogImage: string;
+//  //  tweets: Record<string, any>; // TODO: write types for tweets
 // }
 
 const Blog = ({
-          post,
-          ogImage,
-        }: InferGetStaticPropsType<typeof getStaticProps>) => {
+      post,
+      ogImage,
+    }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { isFallback } = useRouter();
 
   // If the page is not yet generated, this will be displayed
@@ -32,7 +32,7 @@ const Blog = ({
       <MDXRemote
         {...post.mdxSource}
         // components={{
-        //   ...MDXComponents,
+        //  ...MDXComponents,
         // }}
       />
     </BlogLayout>
@@ -61,8 +61,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
      * Get tweets from API
      */
     // const tweets =
-    //   // TODO: write proper return types for getTweets
-    //   post.tweetIDs.length > 0 ? await getTweets(post.tweetIDs) : {};
+    //  // TODO: write proper return types for getTweets
+    //  post.tweetIDs.length > 0 ? await getTweets(post.tweetIDs) : {};
 
     const ogImage = await getOgImage({
       title: post.frontMatter.title,

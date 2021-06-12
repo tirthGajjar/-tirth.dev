@@ -35,10 +35,10 @@ const Button: React.FC<Props> = ({ children, onClick }) => {
         // "px-4 py-2 text-base rounded-md": size === ButtonSize.MEDIUM,
         // "px-6 py-3 text-base rounded-md": size === ButtonSize.LARGE,
         // "text-white bg-indigo-600 hover:bg-indigo-700":
-        //   type === ButtonType.PRIMARY,
+        //  type === ButtonType.PRIMARY,
         // "text-gray-700 bg-white hover:bg-gray-50": type === ButtonType.DEFAULT,
         // "text-gray-700 bg-transparent border-transparent":
-        //   type === ButtonType.LINK,
+        //  type === ButtonType.LINK,
       })}
     >
       {children}

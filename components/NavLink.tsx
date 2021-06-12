@@ -26,7 +26,7 @@ const NavLink: React.FC<Props> = ({
       getProps={() => ({
         onMouseEnter: onMouseEnterHandler,
         className:
-          "font-medium space-x-1 py-4 px-2 hover:bg-blue-50 no-underline inline-flex items-center liner-wipe hover:animate-shine hover:bg-gradient-to-r hover:from-blue-700 hover:via-black  hover:to-yellow-400 dark:hover:via-white",
+          "font-medium space-x-1 py-4 px-2 hover:bg-blue-50 no-underline inline-flex items-center liner-wipe hover:animate-shine hover:bg-gradient-to-r hover:from-blue-700 hover:via-black hover:to-yellow-400 dark:hover:via-white",
       })}
     >
       {children}

@@ -94,7 +94,7 @@ export default function Example() {
               Feb 2020 - Now
             </div>
 
-            <div className="mt-6 dark:text-indigo-100 text-gray-700  space-y-6">
+            <div className="mt-6 dark:text-indigo-100 text-gray-700 space-y-6">
               <p className="text-sm text-gray-600 dark:text-gray-200">
                 <ExternalLink
                   href="https://raxter.io"
@@ -119,43 +119,43 @@ export default function Example() {
                       Product Architect cum Tech Lead
                     </span>
                     {/* <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
-                  Product Architect
-                </span> */}
+     Product Architect
+    </span> */}
                     {/* <span className="ml-4 text-sm inline-flex items-center">
-                    Learn more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span> */}
+     Learn more
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-5 h-5 ml-1"
+      aria-hidden="true"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+     >
+      <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M9 5l7 7-7 7"
+      />
+     </svg>
+     </span> */}
                   </a>
                 </div>
                 <div className="prose prose-lg dark:text-indigo-100 font-normal">
                   <p>
                     As a product architect, I redesigned the architecture to
                     achieve
-                    <span className="font-fancy font-semibold italic text-red-500 dark:text-green-400 px-1">
+                    <span className="font-semibold italic text-red-500 dark:text-green-400 px-1">
                       4 nines of availability,
                     </span>
                     improved scalability and achieved costs reductions up to{" "}
-                    <span className="font-fancy font-semibold text-indigo-600 dark:text-yellow-400 text-lg">
+                    <span className="font-semibold text-indigo-600 dark:text-yellow-400 text-lg">
                       34%
                     </span>
                     , using different AWS services and serverless-framework.
                   </p>
                   <p>
-                    <span className="font-fancy font-semibold text-red-500 dark:text-green-400 pr-1 italic">
+                    <span className="font-semibold text-red-500 dark:text-green-400 pr-1 italic">
                       Created, led and mentored a team of 8 engineers
                     </span>
                     from 0 after filtering 500+ applications and conducting a
@@ -169,20 +169,20 @@ export default function Example() {
           {/* Stats section */}
           <div className="mt-10">
             {/* <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="border-t-2 border-gray-100 pt-6"
-                >
-                  <dt className="text-base font-medium text-gray-500">
-                    {stat.label}
-                  </dt>
-                  <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl> */}
+    {stats.map((stat) => (
+    <div
+     key={stat.label}
+     className="border-t-2 border-gray-100 pt-6"
+    >
+     <dt className="text-base font-medium text-gray-500">
+     {stat.label}
+     </dt>
+     <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
+     {stat.value}
+     </dd>
+    </div>
+    ))}
+   </dl> */}
             <div className="mt-10">
               <a href="#" className="text-base font-medium text-indigo-600">
                 Learn more about my work at RAx Labs{" "}

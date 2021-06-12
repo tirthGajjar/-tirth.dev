@@ -7,7 +7,7 @@ const SocialButtons = () => {
       <div className="clip-container cursor-pointer rounded flex place-items-center p-2">
         <button
           type="button"
-          className="github-clip bg-gray-700 dark:bg-gray-300 inline-flex items-center border border-transparent shadow-sm  font-medium rounded-md text-indigo-600 text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
+          className="github-clip bg-gray-700 dark:bg-gray-300 inline-flex items-center border border-transparent shadow-sm font-medium rounded-md text-indigo-600 text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
         >
           <GithubClipPath />
         </button>
@@ -15,7 +15,7 @@ const SocialButtons = () => {
       <div className="clip-container cursor-pointer rounded flex place-items-center p-2">
         <button
           type="button"
-          className="twitter-clip bg-gray-700 dark:bg-gray-300 inline-flex items-center border border-transparent shadow-sm  font-medium rounded-md text-indigo-600 text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
+          className="twitter-clip bg-gray-700 dark:bg-gray-300 inline-flex items-center border border-transparent shadow-sm font-medium rounded-md text-indigo-600 text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
         >
           <TwitterClipPath />
         </button>

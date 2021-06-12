@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -25,6 +25,9 @@ module.exports = {
       colors: {
         "yellow-opaque": "rgb(13 42 148 / 18%)",
         lime: colors.lime,
+        cyan: colors.cyan,
+        emerald: colors.emerald,
+        amber: colors.amber,
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
@@ -64,9 +67,9 @@ module.exports = {
         light: {
           css: [
             {
-              color: theme("colors.indigo.100"),
+              color: theme("colors.gray.200"),
               '[class~="lead"]': {
-                color: theme("colors.indigo.50"),
+                color: theme("colors.gray.20"),
               },
               a: {
                 color: theme("colors.white"),
@@ -75,7 +78,7 @@ module.exports = {
                 color: theme("colors.white"),
               },
               "ol > li::before": {
-                color: theme("colors.indigo.100"),
+                color: theme("colors.gray.200"),
               },
               "ul > li::before": {
                 backgroundColor: theme("colors.gray.600"),

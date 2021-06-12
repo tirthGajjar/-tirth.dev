@@ -1,13 +1,11 @@
 const AboutMe = () => {
   return (
-    <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
+    <div className="relative py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
       <div className="py-16 xl:py-36 overflow-hidden">
-        <div className="max-w-max  mx-auto">
+        <div className="max-w-max mx-auto">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="text-base prose dark:prose-light max-w-prose lg:max-w-none">
-              <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide">
-                About me
-              </h2>
+              <h1 className="tracking-wide">About me</h1>
             </div>
           </div>
           <div className="relative">
@@ -77,9 +75,9 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative lg:px-16 md:bg-opacity-90 dark:text-indigo-50 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+            <div className="relative lg:px-16 md:bg-opacity-90 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-                <div className="prose prose-lg dark:text-indigo-100 font-normal lg:max-w-none">
+                <div className="prose dark:prose-light prose-lg font-normal lg:max-w-none">
                   <p>
                     I love to build great applications, and that has drove some
                     major decisions in my career. Throughout my career, I have
@@ -105,7 +103,7 @@ const AboutMe = () => {
                     practices in terms of development, testing and tooling.
                   </p>
                 </div>
-                <div className="mt-6 prose dark:text-indigo-100 prose-lg font-normal lg:mt-0">
+                <div className="prose dark:prose-light prose-lg font-normal mt-6 lg:mt-0">
                   <p>
                     I have been wanting to create great products since the start
                     of my graduation, I and my roommate in college used to

@@ -21,16 +21,6 @@ class MyDocument extends Document {
           />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
-          {/* <link
-            rel="preconnect"
-            href="https://cdn.usefathom.com"
-            crossOrigin=""
-          /> */}
-          {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
-            rel="stylesheet"
-          /> */}
           <link
             href="/static/favicons/apple-touch-icon.png"
             rel="apple-touch-icon"
