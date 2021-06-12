@@ -77,7 +77,7 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative lg:px-16 md:bg-opacity-90 dark:text-indigo-50 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 prose dark:prose-light md:prose-lg md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+            <div className="relative lg:px-16 md:bg-opacity-90 dark:text-indigo-50 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-lg dark:text-indigo-100 font-normal lg:max-w-none">
                   <p>
@@ -133,8 +133,9 @@ const AboutMe = () => {
                 </div>
               </div>
               <div className="mt-8 inline-flex rounded-md shadow">
-                <button
-                  type="button"
+                <a
+                  href="/Tirth Gajjar - Product Architect.pdf"
+                  target="_blank"
                   className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <svg
@@ -153,7 +154,7 @@ const AboutMe = () => {
                     />
                   </svg>
                   Resume
-                </button>
+                </a>
               </div>
             </div>
           </div>
