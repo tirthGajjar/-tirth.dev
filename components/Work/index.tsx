@@ -63,20 +63,20 @@ const Work = () => {
       <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
         Work
       </h1>
-      <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
+      <div className="grid gap-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
         {posts.map((post) => (
           <div
             key={post.title}
-            className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+            className="flex overflow-hidden flex-col rounded-lg shadow-lg"
           >
             <div className="flex-shrink-0">
               <img
-                className="h-48 w-full object-cover"
+                className="object-cover w-full h-48"
                 src={post.imageUrl}
                 alt=""
               />
             </div>
-            <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div className="flex flex-col flex-1 justify-between p-6 bg-white">
               <div className="flex-1">
                 <p className="text-sm font-medium text-indigo-600">
                   <a href={post.category.href} className="hover:underline">
@@ -92,12 +92,12 @@ const Work = () => {
                   </p>
                 </a>
               </div>
-              <div className="mt-6 flex items-center">
+              <div className="flex items-center mt-6">
                 <div className="flex-shrink-0">
                   <a href={post.author.href}>
                     <span className="sr-only">{post.author.name}</span>
                     <img
-                      className="h-10 w-10 rounded-full"
+                      className="w-10 h-10 rounded-full"
                       src={post.author.imageUrl}
                       alt=""
                     />

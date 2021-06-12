@@ -25,7 +25,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-black min-h-screen md:px-0">
+    <div className="min-h-screen bg-white dark:bg-black md:px-0">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -46,11 +46,11 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="w-full my-0 text-gray-900 sticky-nav dark:text-gray-100">
-        <div className="flex items-center justify-between max-w-4xl lg:max-w-7xl w-full px-4 md:px-8 py-4 -mb-20 mx-auto">
+      <nav className="my-0 w-full text-gray-900 dark:text-gray-100 sticky-nav">
+        <div className="flex justify-between items-center py-4 px-4 mx-auto -mb-20 w-full max-w-4xl lg:max-w-7xl md:px-8">
           <a
             href="#skip"
-            className="absolute px-4 py-2 transition-transform duration-200 transform -translate-y-12 focus:translate-y-3 -top-8"
+            className="absolute -top-8 py-2 px-4 transition-transform duration-200 transform -translate-y-12 focus:translate-y-3"
           >
             Skip to content
           </a>
@@ -63,7 +63,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
           </div>
         </div>
       </nav>
-      <main id="skip" className=" flex flex-col justify-center bg-transparent">
+      <main id="skip" className="flex flex-col justify-center bg-transparent">
         {children}
         <Footer />
       </main>

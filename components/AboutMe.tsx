@@ -1,16 +1,16 @@
 const AboutMe = () => {
   return (
     <div className="relative py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
-      <div className="py-16 xl:py-36 overflow-hidden">
-        <div className="max-w-max mx-auto">
+      <div className="overflow-hidden py-16 xl:py-36">
+        <div className="mx-auto max-w-max">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
-            <div className="text-base prose dark:prose-light max-w-prose lg:max-w-none">
+            <div className="max-w-prose text-base dark:prose-light lg:max-w-none dark:prose-light prose">
               <h1 className="tracking-wide">About me</h1>
             </div>
           </div>
           <div className="relative">
             <svg
-              className="hidden md:block absolute top-0 right-0 -mt-20 -mr-20"
+              className="hidden absolute top-0 right-0 -mt-20 -mr-20 md:block"
               width={404}
               height={384}
               fill="none"
@@ -43,7 +43,7 @@ const AboutMe = () => {
               />
             </svg>
             <svg
-              className="hidden md:block absolute bottom-0 left-0 -mb-20 -ml-20"
+              className="hidden absolute bottom-0 left-0 -mb-20 -ml-20 md:block"
               width={404}
               height={384}
               fill="none"
@@ -75,9 +75,9 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative lg:px-16 md:bg-opacity-90 md:bg-gray-50 md:dark:bg-gray-900 md:dark:bg-opacity-95 md:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+            <div className="relative mx-auto xl:max-w-6xl lg:px-16 lg:max-w-5xl md:dark:bg-gray-900 md:dark:bg-opacity-95 md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-                <div className="prose dark:prose-light prose-lg font-normal lg:max-w-none">
+                <div className="font-normal dark:prose-light lg:max-w-none dark:prose-light prose prose-lg">
                   <p>
                     I love to build great applications, and that has drove some
                     major decisions in my career. Throughout my career, I have
@@ -103,7 +103,7 @@ const AboutMe = () => {
                     practices in terms of development, testing and tooling.
                   </p>
                 </div>
-                <div className="prose dark:prose-light prose-lg font-normal mt-6 lg:mt-0">
+                <div className="mt-6 font-normal dark:prose-light lg:mt-0 dark:prose-light prose prose-lg">
                   <p>
                     I have been wanting to create great products since the start
                     of my graduation, I and my roommate in college used to
@@ -130,15 +130,15 @@ const AboutMe = () => {
                   </p>
                 </div>
               </div>
-              <div className="mt-8 inline-flex rounded-md shadow">
+              <div className="inline-flex mt-8 rounded-md shadow">
                 <a
                   href="/Tirth-Gajjar--Product-Architect-Resume.pdf"
                   target="_blank"
-                  className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex items-center py-2 px-4 text-base font-medium text-white bg-indigo-600 rounded-md border border-transparent shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="-ml-1 mr-2 h-5 w-5"
+                    className="mr-2 -ml-1 w-5 h-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

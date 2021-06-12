@@ -44,7 +44,7 @@ const BlogLayout: React.FC<Props> = ({ children, frontMatter, ogImage }) => {
         <p>{format(new Date(Date.parse(date)), "MMMM d, yyyy")}</p>
         <p> / {readingTime.text} / </p>
       </div>
-      <article className="prose dark:prose-light prose-purple md:prose-lg lg:prose-xl max-w-4xl mx-auto">
+      <article className="mx-auto max-w-4xl dark:prose-light md:prose-lg lg:prose-xl prose dark:prose-light prose-purple md:prose-lg lg:prose-xl">
         {children}
       </article>
     </Container>

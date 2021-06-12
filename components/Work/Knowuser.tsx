@@ -9,13 +9,13 @@ const stats = [
 export default function Example() {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
-      <div className="lg:mx-auto md:max-w-5xl lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overscroll-x-auto">
-        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+      <div className="flex overscroll-x-auto flex-col-reverse lg:mx-auto md:max-w-5xl lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+        <div className="relative px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
-          <div className="pt-6 sm:pt-4 lg:pt-8 space-y-2">
-            <div className="flex items-center justify-between">
-              <h2 className="text-3xl text-gray-900 font-bold tracking-tight sm:text-4xl">
-                <span className="mb-2 block text-2xl leading-8 font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+          <div className="pt-6 space-y-2 sm:pt-4 lg:pt-8">
+            <div className="flex justify-between items-center">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <span className="block mb-2 text-2xl font-bold tracking-tight leading-8 text-gray-900 dark:text-gray-50 sm:text-4xl">
                   Knowuser
                 </span>
               </h2>
@@ -39,11 +39,11 @@ export default function Example() {
                 </a>
               </div>
             </div>
-            <div className="text-base dark:text-yellow-300 text-indigo-600 font-semibold tracking-wide uppercase">
+            <div className="text-base font-semibold tracking-wide text-indigo-600 uppercase dark:text-yellow-300">
               DEC 2019 - Now
             </div>
 
-            <div className="mt-6 dark:text-indigo-100 text-gray-700 space-y-6">
+            <div className="mt-6 space-y-6 text-gray-700 dark:text-indigo-100">
               <p className="text-sm text-gray-600 dark:text-gray-200">
                 <ExternalLink
                   href="https://knowuser.com"
@@ -64,7 +64,7 @@ export default function Example() {
                 <div>
                   <a
                     href="#"
-                    className="inline-flex w-full items-center justify-between dark:text-white text-indigo-500 font-semibold rounded-l rounded-r-full sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
+                    className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <span className="inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none">
                       Co-Founder
@@ -72,11 +72,11 @@ export default function Example() {
                     {/* <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
      Product Architect
     </span> */}
-                    {/* <span className="ml-4 text-sm inline-flex items-center">
+                    {/* <span className="inline-flex items-center ml-4 text-sm">
      Learn more
      <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-5 h-5 ml-1"
+      className="ml-1 w-5 h-5"
       aria-hidden="true"
       fill="none"
       viewBox="0 0 24 24"
@@ -92,7 +92,7 @@ export default function Example() {
      </span> */}
                   </a>
                 </div>
-                <div className="prose prose-lg dark:text-indigo-100 font-normal">
+                <div className="font-normal dark:text-indigo-100 prose prose-lg">
                   <p>
                     I was responsible for doing the concept formulation,
                     competitive research, architecting tech solutions and
@@ -115,7 +115,7 @@ export default function Example() {
     {stats.map((stat) => (
     <div
      key={stat.label}
-     className="border-t-2 border-gray-100 pt-6"
+     className="pt-6 border-t-2 border-gray-100"
     >
      <dt className="text-base font-medium text-gray-500">
      {stat.label}
@@ -139,7 +139,7 @@ export default function Example() {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:left-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 left-1/2 w-full bg-gray-50 dark:bg-gray-900 rounded-l-3xl lg:left-72" />
+            <div className="absolute inset-y-0 left-1/2 w-full bg-gray-50 rounded-l-3xl dark:bg-gray-900 lg:left-72" />
             <svg
               className="absolute top-8 right-1/2 -ml-3 lg:-left-8 lg:right-auto lg:top-12"
               width={404}
@@ -175,9 +175,9 @@ export default function Example() {
           </div>
           <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
-            <div className="relative h-96 rounded-2xl shadow-xl overflow-hidden">
+            <div className="overflow-hidden relative h-96 rounded-2xl shadow-xl">
               <img
-                className="absolute inset-0 h-full w-full object-cover"
+                className="object-cover absolute inset-0 w-full h-full"
                 src="/knowuser-cover.jpg"
                 alt=""
               />

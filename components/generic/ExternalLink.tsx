@@ -57,7 +57,7 @@ const Link: React.FC<IProps> = ({
       {children}
       {showIcon && (
         <svg
-          className="w-6 h-4 px-1 inline-block"
+          className="inline-block px-1 w-6 h-4"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

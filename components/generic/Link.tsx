@@ -25,7 +25,7 @@ const ExternalLink: React.FC<Props> = ({
       href={link}
       onMouseEnter={() => playFunction()}
     >
-      <span className="inline-flex items-center ">{label}</span>
+      <span className="inline-flex items-center">{label}</span>
       {children}
     </a>
   );
