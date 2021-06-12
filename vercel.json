@@ -21,6 +21,15 @@
       ]
     },
     {
+      "source": "/Tirth-Gajjar--Product-Architect-Resume.pdf",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/sounds/switch-on.mp3",
       "headers": [
         {
@@ -60,8 +69,8 @@
   ],
   "redirects": [
     {
-      "source": "/LeeRobinson.pdf",
-      "destination": "/robinson-resume-2019.pdf"
+      "source": "/TirthGajjar.pdf",
+      "destination": "/Tirth-Gajjar--Product-Architect-Resume.pdf"
     },
     {
       "source": "/projects",
