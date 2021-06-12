@@ -14,6 +14,7 @@ function Intro(): ReactElement {
     show: true,
     animationDelay: 1500,
     children: "",
+    multiline: true,
   };
   const { resolvedTheme } = useTheme();
 
