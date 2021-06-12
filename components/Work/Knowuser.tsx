@@ -92,17 +92,19 @@ export default function Example() {
                   </span> */}
                   </a>
                 </div>
-                <p className="text-base">
-                  I was responsible for doing the concept formulation,
-                  competetive research, architecting tech solutions and building
-                  the web application for the product.
-                </p>
-                <p className="text-base">
-                  I have always been a fan of no-code tools like Notion, and I
-                  am a strong believer of Product-led Growth. Knowuser is meant
-                  to be the most flexible no-code tool, built to enable our
-                  customers to do productled growth.
-                </p>
+                <div className="prose prose-lg dark:text-indigo-100 font-normal">
+                  <p>
+                    I was responsible for doing the concept formulation,
+                    competitive research, architecting tech solutions and
+                    building the web application for the product.
+                  </p>
+                  <p>
+                    I have always been a fan of no-code tools like Notion, and I
+                    am a strong believer of Product-led Growth. Knowuser is
+                    meant to be the most flexible no-code tool, built to enable
+                    our customers to do product-led growth.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

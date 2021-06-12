@@ -9,7 +9,7 @@ const stats = [
 export default function Example() {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
-      <div className="lg:mx-auto lg:max-w-7xl flex flex-col-reverse lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div className="lg:mx-auto lg:max-w-7xl flex flex-col lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
@@ -141,25 +141,27 @@ export default function Example() {
                   </span> */}
                   </a>
                 </div>
-                <p className="text-base">
-                  As a product architect, I redesigned the architecture to
-                  achieve
-                  <span className="font-fancy font-semibold italic text-red-500 dark:text-green-400 px-1">
-                    4 nines of availability,
-                  </span>
-                  improved scalability and achieved costs reductions up to{" "}
-                  <span className="font-fancy font-semibold text-indigo-600 dark:text-yellow-400 text-lg">
-                    34%
-                  </span>
-                  , using different AWS services and serverless-framework.
-                </p>
-                <p className="text-base">
-                  <span className="font-fancy font-semibold text-red-500 dark:text-green-400 pr-1 italic">
-                    Created, led and mentored a team of 8 engineers
-                  </span>
-                  from 0 after filtering 500+ applications and conducting a
-                  total of 100+ rounds of interviews.
-                </p>
+                <div className="prose prose-lg dark:text-indigo-100 font-normal">
+                  <p>
+                    As a product architect, I redesigned the architecture to
+                    achieve
+                    <span className="font-fancy font-semibold italic text-red-500 dark:text-green-400 px-1">
+                      4 nines of availability,
+                    </span>
+                    improved scalability and achieved costs reductions up to{" "}
+                    <span className="font-fancy font-semibold text-indigo-600 dark:text-yellow-400 text-lg">
+                      34%
+                    </span>
+                    , using different AWS services and serverless-framework.
+                  </p>
+                  <p>
+                    <span className="font-fancy font-semibold text-red-500 dark:text-green-400 pr-1 italic">
+                      Created, led and mentored a team of 8 engineers
+                    </span>
+                    from 0 after filtering 500+ applications and conducting a
+                    total of 100+ rounds of interviews.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
