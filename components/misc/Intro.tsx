@@ -15,6 +15,7 @@ function Intro(): ReactElement {
     animationDelay: 1500,
     children: "",
     multiline: true,
+    padding: [4, 8],
   };
   const { resolvedTheme } = useTheme();
 
@@ -35,7 +36,7 @@ function Intro(): ReactElement {
               {...roughNotationProps}
               color={resolvedTheme === "dark" ? "#B91C1C" : "#CFFAFE"}
             >
-              <span className="px-2 font-semibold text-cyan-600 dark:text-gray-200">
+              <span className="px-1.5 font-semibold text-cyan-600 dark:text-red-100">
                 product architect,
               </span>
             </RoughNotation>
@@ -43,16 +44,16 @@ function Intro(): ReactElement {
               {...roughNotationProps}
               color={resolvedTheme === "dark" ? "#3730A3" : "#D1FAE5"}
             >
-              <span className="px-2 font-semibold text-emerald-600 dark:text-gray-200">
+              <span className="px-1.5 font-semibold text-emerald-600 dark:text-indigo-100">
                 full-stack developer,
               </span>
             </RoughNotation>
             and a
             <RoughNotation
               {...roughNotationProps}
-              color={resolvedTheme === "dark" ? "#FEF3C7" : "#FEF3C7"}
+              color={resolvedTheme === "dark" ? "#84CC16" : "#FEF3C7"}
             >
-              <span className="px-2 font-semibold text-amber-600 dark:text-amber-600">
+              <span className="px-1.5 font-semibold text-amber-600 dark:text-lime-50">
                 leader.
               </span>
             </RoughNotation>
