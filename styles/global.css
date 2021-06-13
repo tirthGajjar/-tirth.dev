@@ -264,3 +264,12 @@ table {
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
 }
+
+#about-me-section::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+  pointer-events: none;
+}

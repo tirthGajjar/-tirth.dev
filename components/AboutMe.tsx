@@ -5,7 +5,9 @@ const AboutMe = () => {
         <div className="mx-auto max-w-max">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="prose max-w-prose text-base dark:prose-light lg:max-w-none">
-              <h1 className="tracking-wide">About me</h1>
+              <h1 id="about-me-section" className="tracking-wide">
+                About me
+              </h1>
             </div>
           </div>
           <div className="relative">
@@ -75,7 +77,7 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative mx-auto md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl lg:px-16 lg:max-w-5xl xl:max-w-6xl md:dark:bg-gray-900 md:dark:bg-opacity-95">
+            <div className="relative mx-auto xl:max-w-6xl lg:px-16 lg:max-w-5xl md:dark:bg-gray-900 md:dark:bg-opacity-95 md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-lg font-normal dark:prose-light lg:max-w-none">
                   <p>

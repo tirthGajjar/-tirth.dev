@@ -3,7 +3,7 @@ import TwitterClipPath from "./TwitterClipPath";
 
 const SocialButtons = () => {
   return (
-    <div className="flex flex-col justify-items-start py-4 my-4 space-y-8 space-x-0 w-full max-w-4xl md:flex-row md:space-x-4 md:space-y-0">
+    <div className="flex flex-col justify-items-center items-center py-4 space-y-8 space-x-0 w-full max-w-4xl md:justify-center md:flex-row md:space-x-4 md:space-y-0">
       <div className="flex place-items-center p-2 rounded cursor-pointer clip-container">
         <button
           type="button"
