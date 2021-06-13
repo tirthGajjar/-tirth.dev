@@ -1,12 +1,6 @@
-import ExternalLink from "../generic/ExternalLink";
+import ExternalLink from "@/components/generic/ExternalLink";
 
-/* This example requires Tailwind CSS v2.0+ */
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "5" },
-];
-
-export default function Example() {
+const RAxWorkEx = () => {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
       <div className="flex flex-col dark:flex-col lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -112,7 +106,7 @@ export default function Example() {
               <div className="space-y-4">
                 <div>
                   <a
-                    href="#"
+                    href="/work/rax/#product-architect"
                     className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <span className="inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none">
@@ -145,7 +139,7 @@ export default function Example() {
                   <p>
                     As a product architect, I redesigned the architecture to
                     achieve
-                    <span className="px-1 italic font-semibold text-red-500 dark:text-green-400">
+                    <span className="px-1 italic font-semibold text-red-600 dark:text-green-400">
                       4 nines of availability,
                     </span>
                     improved scalability and achieved costs reductions up to{" "}
@@ -155,7 +149,7 @@ export default function Example() {
                     , using different AWS services and serverless-framework.
                   </p>
                   <p>
-                    <span className="pr-1 italic font-semibold text-red-500 dark:text-green-400">
+                    <span className="pr-1 italic font-semibold text-red-600 dark:text-green-400">
                       Created, led and mentored a team of 8 engineers
                     </span>
                     from 0 after filtering 500+ applications and conducting a
@@ -184,9 +178,27 @@ export default function Example() {
     ))}
    </dl> */}
             <div className="mt-10">
-              <a href="#" className="text-base font-medium text-indigo-600">
-                Learn more about my work at RAx Labs{" "}
-                <span aria-hidden="true">&rarr;</span>{" "}
+              <a
+                href="/work/rax"
+                className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
+              >
+                Learn more about my work at RAx Labs
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mx-1 w-5 h-5"
+                  aria-hidden="true"
+                  role="presentation"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -194,4 +206,6 @@ export default function Example() {
       </div>
     </div>
   );
-}
+};
+
+export default RAxWorkEx;

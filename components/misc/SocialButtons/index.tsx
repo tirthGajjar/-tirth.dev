@@ -7,6 +7,8 @@ const SocialButtons = () => {
       <div className="flex place-items-center p-2 rounded cursor-pointer clip-container">
         <button
           type="button"
+          aria-label="Github Profile"
+          role="link"
           className="inline-flex items-center text-lg font-medium text-indigo-600 bg-gray-700 rounded-md border border-transparent shadow-sm dark:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 github-clip"
         >
           <GithubClipPath />
@@ -15,6 +17,8 @@ const SocialButtons = () => {
       <div className="flex place-items-center p-2 rounded cursor-pointer clip-container">
         <button
           type="button"
+          aria-label="Twitter Account"
+          role="link"
           className="inline-flex items-center text-lg font-medium text-indigo-600 bg-gray-700 rounded-md border border-transparent shadow-sm dark:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 twitter-clip"
         >
           <TwitterClipPath />

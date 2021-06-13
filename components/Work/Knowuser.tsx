@@ -1,12 +1,6 @@
 import ExternalLink from "../generic/ExternalLink";
 
-/* This example requires Tailwind CSS v2.0+ */
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "5" },
-];
-
-export default function Example() {
+const KnowuserWorkEx = () => {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
       <div className="flex overscroll-x-auto flex-col-reverse lg:mx-auto md:max-w-5xl lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -63,7 +57,7 @@ export default function Example() {
               <div className="space-y-4">
                 <div>
                   <a
-                    href="#"
+                    href="/work/knowuser"
                     className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <span className="inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none">
@@ -92,7 +86,7 @@ export default function Example() {
      </span> */}
                   </a>
                 </div>
-                <div className="font-normal dark:text-indigo-100 prose prose-lg">
+                <div className="prose prose-lg font-normal dark:text-indigo-100">
                   <p>
                     I was responsible for doing the concept formulation,
                     competitive research, architecting tech solutions and
@@ -127,9 +121,27 @@ export default function Example() {
     ))}
    </dl> */}
             <div className="mt-10">
-              <a href="#" className="text-base font-medium text-indigo-600">
-                Learn more about my work at Knowuser{" "}
-                <span aria-hidden="true">&rarr;</span>{" "}
+              <a
+                href="/work/knowuser"
+                className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
+              >
+                Learn more about my work at Knowuser
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mx-1 w-5 h-5"
+                  aria-hidden="true"
+                  role="presentation"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -149,7 +161,7 @@ export default function Example() {
             >
               <defs>
                 <pattern
-                  id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                  id="e7a38260-a101-4efe-949c-f9ea46827c17"
                   x={0}
                   y={0}
                   width={20}
@@ -169,7 +181,7 @@ export default function Example() {
               <rect
                 width={404}
                 height={392}
-                fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                fill="url(#e7a38260-a101-4efe-949c-f9ea46827c17)"
               />
             </svg>
           </div>
@@ -187,4 +199,6 @@ export default function Example() {
       </div>
     </div>
   );
-}
+};
+
+export default KnowuserWorkEx;

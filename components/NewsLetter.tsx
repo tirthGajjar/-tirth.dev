@@ -69,27 +69,27 @@ const NewsLetter = () => {
                 <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
                   Become a better full-stack developer.
                 </h2>
-                <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold text-gray-200 dark:text-gray-600">
-                  Learn more about serverless technologies, AWS, react, nextjs
+                <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold text-gray-200 dark:text-gray-800">
+                  Learn more about serverless technologies, AWS, react, NextJS
                   and more.
                 </p>
               </div>
               <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                 <div className="flex-1 min-w-0">
-                  <label htmlFor="cta_email" className="sr-only">
-                    Email address
+                  <label htmlFor="cta_email">
+                    <span className="sr-only">Email address</span>
+                    <input
+                      id="cta_email"
+                      type="email"
+                      className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:offset-lime-600 dark:offset-lime-600"
+                      placeholder="Enter your email"
+                    />
                   </label>
-                  <input
-                    id="cta_email"
-                    type="email"
-                    className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:offset-lime-600 dark:offset-lime-600"
-                    placeholder="Enter your email"
-                  />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
-                    className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow sm:px-10 dark:offset-lime-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 hover:bg-indigo-400 dark:hover:bg-lime-400 dark:text-gray-900 dark:bg-lime-300 dark:offset-lime-600"
+                    className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow dark:text-gray-900 dark:bg-lime-300 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:offset-lime-600 sm:px-10 dark:hover:bg-lime-400 dark:offset-lime-600"
                   >
                     Subscribe
                   </button>

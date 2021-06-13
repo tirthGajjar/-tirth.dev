@@ -48,7 +48,6 @@ const ThemeSwitcher = () => {
 
   return (
     <motion.button
-      aria-describedby="lightDarkSwitcherTooltip"
       onClick={handleThemeChange}
       className="w-10 h-10 inline-flex items-center p-1.5 border border-transparent rounded-sm shadow-sm dark:focus:ring-offset-gray-600 focus:ring-offset-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
       title="Theme toggle"

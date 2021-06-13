@@ -22,7 +22,7 @@ module.exports = {
       },
     ];
   },
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config, { dev: _dev, isServer: _isServer }) => {
     // if (isServer) {
     //   require('./scripts/generate-sitemap');
     //   require('./scripts/generate-rss');

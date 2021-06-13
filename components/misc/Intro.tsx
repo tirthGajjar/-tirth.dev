@@ -37,7 +37,7 @@ function Intro(): ReactElement {
                 {...roughNotationProps}
                 color={resolvedTheme === "dark" ? "#B91C1C" : "#CFFAFE"}
               >
-                <span className="px-1.5 font-semibold text-cyan-600 dark:text-red-100">
+                <span className="px-1.5 font-semibold text-cyan-700 dark:text-red-100">
                   product architect,
                 </span>
               </RoughNotation>
@@ -45,7 +45,7 @@ function Intro(): ReactElement {
                 {...roughNotationProps}
                 color={resolvedTheme === "dark" ? "#3730A3" : "#D1FAE5"}
               >
-                <span className="px-1.5 font-semibold text-emerald-600 dark:text-indigo-100">
+                <span className="px-1.5 font-semibold text-emerald-700 dark:text-indigo-100">
                   full-stack developer,
                 </span>
               </RoughNotation>
@@ -54,7 +54,7 @@ function Intro(): ReactElement {
                 {...roughNotationProps}
                 color={resolvedTheme === "dark" ? "#84CC16" : "#FEF3C7"}
               >
-                <span className="px-1.5 font-semibold text-amber-600 dark:text-lime-50">
+                <span className="px-1.5 font-semibold text-amber-700 dark:text-lime-50">
                   leader.
                 </span>
               </RoughNotation>
