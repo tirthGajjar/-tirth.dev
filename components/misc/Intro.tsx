@@ -21,7 +21,7 @@ function Intro(): ReactElement {
 
   return (
     <>
-      <div className="mb-6 max-w-4xl dark:prose-light md:prose-lg prose dark:prose-light md:prose-lg">
+      <div className="prose mb-6 max-w-4xl dark:prose-light md:prose-lg">
         <RoughNotationGroup>
           <h1>
             Hey,{" "}

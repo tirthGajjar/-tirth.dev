@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div className="overflow-hidden py-16 xl:py-36">
         <div className="mx-auto max-w-max">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
-            <div className="max-w-prose text-base dark:prose-light lg:max-w-none dark:prose-light prose">
+            <div className="prose max-w-prose text-base dark:prose-light lg:max-w-none">
               <h1 className="tracking-wide">About me</h1>
             </div>
           </div>
@@ -75,15 +75,16 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative mx-auto xl:max-w-6xl lg:px-16 lg:max-w-5xl md:dark:bg-gray-900 md:dark:bg-opacity-95 md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl">
+            <div className="relative mx-auto md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl lg:px-16 lg:max-w-5xl xl:max-w-6xl md:dark:bg-gray-900 md:dark:bg-opacity-95">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-                <div className="font-normal dark:prose-light lg:max-w-none dark:prose-light prose prose-lg">
+                <div className="prose prose-lg font-normal dark:prose-light lg:max-w-none">
                   <p>
                     I love to build great applications, and that has drove some
-                    major decisions in my career. Throughout my career, I have
-                    worked with various frontend frameworks (NextJS, React, Vue,
-                    NuxtJS), Browser Extensions, REST and GraphQL APIs, and
-                    Databases (PostgreSQL, MSSQL, DynamoDB, Redis).
+                    major decisions in my career. I have worked with various
+                    front-end frameworks (Next, React, Vue, Nuxt), developed
+                    Chrome extensions, designed REST & GraphQL APIs and have
+                    worked with different types of databases (PostgreSQL, MySQL,
+                    DynamoDB, Redis, etc.).
                   </p>
                   <p>
                     I started working as data engineer in my first job at MAQ
@@ -93,40 +94,46 @@ const AboutMe = () => {
                     opportunity to co-lead the tech-research team.
                   </p>
                   <p>
-                    My work at MAQ Software also taught me much about the
-                    engineering processes and leadership.
-                  </p>
-                  <p>
-                    To full-fill my product building dream, I joined SalesHandy
-                    as a Senior Software Engineer. My main focus was building
-                    the product's Chrome extension and help the team adopt best
-                    practices in terms of development, testing and tooling.
+                    I wanted to work with a rapidly growing SaaS to gain actual
+                    product building experience, not just as a developer. So, I
+                    joined SalesHandy as a Senior Software Engineer. My main
+                    focus was to improve the engineering processes, building the
+                    product's Chrome extension and help the team adopt best
+                    practices in terms of development, testing and tooling. I
+                    got the chance to work closely with the product designer and
+                    product manager, which gave me good insights about
+                    developing products, people want to use.
                   </p>
                 </div>
-                <div className="mt-6 font-normal dark:prose-light lg:mt-0 dark:prose-light prose prose-lg">
+                <div className="prose prose-lg mt-6 font-normal dark:prose-light lg:mt-0">
                   <p>
-                    I have been wanting to create great products since the start
-                    of my graduation, I and my roommate in college used to
-                    discuss a lot of product building ideas.
+                    Now I wanted to put my understanding and product building
+                    experience to test, so I started working on Knowuser, with a
+                    friend @Parag Chauhan. And that has taught me things, I
+                    could never expect out of a full-time job. It have given me
+                    tremendous amounts of learnings in terms of product
+                    management and engineering systems design.{" "}
                   </p>
                   <p>
-                    To put my product building knowledge to test, I started
-                    working on Knowuser with my roommate in college, Parag
-                    Chauhan.
+                    Meanwhile, I got an opportunity to save my friend's startup
+                    from a bad situation, I joined RAx Labs Inc. as a
+                    consultant, conducted 100+ rounds of interviews, created a
+                    team of 8 engineers from scratch. I had a lot to offer in
+                    terms of architecture design and leadership, so I got
+                    converted to a full-time employee as a Product Architect,
+                    and redesigned the most critical parts of the system.
                   </p>
-                  <p>
-                    As I started working on Knowuser, I got to learn about so
-                    much about product building and designing efficient
-                    solutions. I came across concepts like product-led growth
-                    and immediately got connected with it.
-                  </p>
-                  <p>
+                  {/* <p>
                     At RAx Labs Inc., I had excellent experience building the
                     entire tech-team from ground up, Revamping the most of
                     application architecture to achieve auto-scaling
                     capabilities and reduce costs. My area of focus were leading
                     the team and maintaining the quality of technical
                     implementations.
+                  </p> */}
+                  <p>
+                    These experiences have taught me more than enough about
+                    wearing multiple hats expanding my horizons.
                   </p>
                 </div>
               </div>
