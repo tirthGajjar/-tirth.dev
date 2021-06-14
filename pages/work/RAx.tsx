@@ -19,6 +19,14 @@ import Container from "@/components/Container";
 export default function Example(props) {
   return (
     <Container>
+      <img
+        src="/rax-cover-2.jpg"
+        className="pt-20"
+        alt=""
+        role="presentation"
+        aria-hidden
+      />
+
       <div className="overflow-hidden relative py-16">
         <div className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-lg">

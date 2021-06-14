@@ -46,7 +46,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="my-0 w-full text-gray-900 dark:text-gray-100 sticky-nav">
+      <nav className="my-0 w-full text-gray-900 bg-white bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-50 dark:text-gray-100 sticky-nav">
         <div className="flex justify-between items-center py-4 px-4 mx-auto -mb-20 w-full max-w-4xl lg:max-w-7xl md:px-8">
           <a
             href="#skip"
