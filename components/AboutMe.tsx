@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/generic/ExternalLink";
 const AboutMe = () => {
   return (
     <div className="relative py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
@@ -79,53 +80,82 @@ const AboutMe = () => {
                 fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
               />
             </svg>
-            <div className="relative mx-auto md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl lg:px-16 lg:max-w-5xl xl:max-w-6xl md:dark:bg-gray-900 md:dark:bg-opacity-95">
+            <div className="relative mx-auto xl:max-w-6xl lg:px-16 lg:max-w-5xl md:dark:bg-gray-900 md:dark:bg-opacity-95 md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-lg font-normal dark:prose-light lg:max-w-none">
                   <p>
                     I love to build great applications, and that has drove some
-                    major decisions in my career. I have worked with various
-                    front-end frameworks (Next, React, Vue, Nuxt), developed
-                    Chrome extensions, designed REST & GraphQL APIs and have
-                    worked with different types of databases (PostgreSQL, MySQL,
-                    DynamoDB, Redis, etc.).
+                    major decisions in my career.
                   </p>
                   <p>
-                    I started working as data engineer in my first job at MAQ
-                    Software, and then explored a lot of technologies through
-                    out my career. As I was very keen on learning new
-                    technologies and identifying use-cases, I got the
-                    opportunity to co-lead the tech-research team.
+                    I started working as data engineer in my first job at{" "}
+                    <ExternalLink href="https://maqsoftware.com/">
+                      MAQ Software
+                    </ExternalLink>
+                    , and then explored a lot of technologies which excited me.
+                    As I was very keen on learning new technologies and
+                    identifying use-cases, I{" "}
+                    <span className="font-medium text-red-500">
+                      cleared 9+ Microsoft certification exams in less than a
+                      year,
+                    </span>{" "}
+                    which got the opportunity to{" "}
+                    <span className="font-medium text-red-500">
+                      co-lead the tech-research team.
+                    </span>{" "}
                   </p>
                   <p>
                     I wanted to work with a rapidly growing SaaS to gain actual
                     product building experience, not just as a developer. So, I
-                    joined SalesHandy as a Senior Software Engineer. My main
-                    focus was to improve the engineering processes, building the
-                    product's Chrome extension and help the team adopt best
-                    practices in terms of development, testing and tooling. I
+                    joined{" "}
+                    <ExternalLink href="https://www.saleshandy.com/">
+                      SalesHandy
+                    </ExternalLink>{" "}
+                    as a Senior Software Engineer. My main focus was to{" "}
+                    <span className="font-medium text-blue-700 dark:text-yellow-400">
+                      improve the engineering processes, building the product's
+                      Chrome extension and help the team adopt best practices in
+                      terms of development, testing and tooling.
+                    </span>
+                    {/* I
                     got the chance to work closely with the product designer and
                     product manager, which gave me good insights about
-                    developing products, people want to use.
+                    developing products, people want to use. */}
                   </p>
                 </div>
                 <div className="prose prose-lg mt-6 font-normal dark:prose-light lg:mt-0">
                   <p>
-                    Now I wanted to put my understanding and product building
-                    experience to test, so I started working on Knowuser, with a
-                    friend @Parag Chauhan. And that has taught me things, I
-                    could never expect out of a full-time job. It have given me
-                    tremendous amounts of learnings in terms of product
-                    management and engineering systems design.{" "}
+                    I have been wanting to build a product from ideas to
+                    successful product. I started working on{" "}
+                    <ExternalLink href="https://knowuser.com">
+                      Knowuser
+                    </ExternalLink>
+                    , with a friend "Parag Chauhan" (Know more about why and how
+                    of starting Knowuser). It has expanded my understanding of
+                    what it takes to build a great product. This has given me
+                    tremendous amounts of{" "}
+                    <span className="font-medium text-yellow-700 dark:text-blue-400">
+                      learnings in terms of product management and engineering
+                      systems design.{" "}
+                    </span>
                   </p>
                   <p>
-                    Meanwhile, I got an opportunity to save my friend's startup
-                    from a bad situation, I joined RAx Labs Inc. as a
-                    consultant, conducted 100+ rounds of interviews, created a
-                    team of 8 engineers from scratch. I had a lot to offer in
-                    terms of architecture design and leadership, so I got
-                    converted to a full-time employee as a Product Architect,
-                    and redesigned the most critical parts of the system.
+                    While I was working on Knowuser, I got to know about a
+                    situation in RAx Labs Inc. and I felt the need of helping
+                    the team. I joined as a consultant and{" "}
+                    <span className="font-medium text-indigo-700 dark:text-indigo-400">
+                      conducted 100+ rounds of interviews, created a team of 8
+                      engineers from scratch.{" "}
+                    </span>
+                  </p>
+                  <p>
+                    I had a lot to offer in terms of architecture design and
+                    leadership, so I got converted to a full-time employee as a
+                    Product Architect, and{" "}
+                    <span className="font-medium text-gray-700 dark:text-amber-400">
+                      redesigned the most critical parts of the system.{" "}
+                    </span>
+                    <ExternalLink href="/work/RAx">Learn more</ExternalLink>
                   </p>
                   {/* <p>
                     At RAx Labs Inc., I had excellent experience building the
@@ -135,10 +165,10 @@ const AboutMe = () => {
                     the team and maintaining the quality of technical
                     implementations.
                   </p> */}
-                  <p>
+                  {/* <p>
                     These experiences have taught me more than enough about
                     wearing multiple hats expanding my horizons.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="inline-flex mt-8 rounded-md shadow">
