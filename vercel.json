@@ -73,6 +73,10 @@
       "destination": "/Tirth-Gajjar--Product-Architect-Resume.pdf"
     },
     {
+      "source": "/appcues",
+      "destination": "/?source=appcues"
+    },
+    {
       "source": "/projects",
       "destination": "/about"
     },
