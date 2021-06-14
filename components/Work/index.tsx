@@ -76,7 +76,7 @@ const Work = () => {
                 alt=""
               />
             </div>
-            <div className="flex flex-col flex-1 justify-between p-6 bg-white">
+            <div className="flex flex-col flex-1 justify-between p-6">
               <div className="flex-1">
                 <p className="text-sm font-medium text-indigo-600">
                   <a href={post.category.href} className="hover:underline">

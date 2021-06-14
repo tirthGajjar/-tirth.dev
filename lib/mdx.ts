@@ -45,6 +45,7 @@ export const getFileBySlug = async <T extends PostType>(
         // remarkSectionize,
         // remarkFigure,
         require("remark-code-titles"),
+        require("remark-toc"),
       ],
       rehypePlugins: [mdxPrism],
     },

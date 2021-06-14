@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import ExternalLink from "@/components/generic/ExternalLink";
+import Link from "next/link";
 
 const RAxWorkEx = () => {
   return (
@@ -178,28 +180,30 @@ const RAxWorkEx = () => {
     ))}
    </dl> */}
             <div className="mt-10">
-              <a
-                href="/work/rax"
-                className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
-              >
-                Learn more about my work at RAx Labs
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mx-1 w-5 h-5"
-                  aria-hidden="true"
-                  role="presentation"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <Link passHref href="/work/RAx">
+                <a
+                  href="/work/RAx"
+                  className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
+                  Learn more about my work at RAx Labs
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mx-1 w-5 h-5"
+                    aria-hidden="true"
+                    role="presentation"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

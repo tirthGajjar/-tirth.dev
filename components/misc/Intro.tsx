@@ -30,7 +30,7 @@ function Intro(): ReactElement {
               <WavingHand />
             </span>
           </h1>
-          <div className="my-6 text-lg leading-10 md:text-xl">
+          <div className="my-6 text-lg leading-loose md:text-xl">
             <p>
               I'm a
               <RoughNotation
@@ -58,14 +58,14 @@ function Intro(): ReactElement {
                   leader.
                 </span>
               </RoughNotation>
-              I work as the Product Architect at RAx Labs Inc. on product{" "}
+              I work as the Product Architect at{" "}
+              <a href="https://www.linkedin.com/company/rax-labs/">
+                RAx Labs Inc.
+              </a>{" "}
+              on product{" "}
               <ExternalLink href="https://raxter.io">raxter.io</ExternalLink>. I
-              have built and lead complete remote teams successfully from last 3
-              years.
-            </p>
-            <p>
-              I thrive to build products and engineering teams from ground up
-              and have successfully done so over the last 3 years.
+              thrive to build products and engineering teams from ground up and
+              have successfully done so over the last 3 years.
             </p>
             <p>
               I usually talk about JavaScript/TypeScript eco-system, Serverless

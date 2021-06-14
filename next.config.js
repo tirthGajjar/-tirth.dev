@@ -1,4 +1,7 @@
-module.exports = {
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withTM = require("next-transpile-modules")(["next-usequerystate"]);
+
+module.exports = withTM({
   future: {
     webpack5: true,
     strictPostcssConfiguration: true,
@@ -55,7 +58,7 @@ module.exports = {
 
     return config;
   },
-};
+});
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
