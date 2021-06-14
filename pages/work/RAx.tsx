@@ -16,7 +16,7 @@ import Container from "@/components/Container";
   }
   ```
 */
-export default function Example(props) {
+const RAxWork = () => {
   return (
     <Container>
       <img
@@ -742,4 +742,6 @@ export default function Example(props) {
       </div>
     </Container>
   );
-}
+};
+
+export default RAxWork;
