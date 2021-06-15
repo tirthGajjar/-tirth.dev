@@ -21,13 +21,20 @@ const RAxWork = () => {
     <Container>
       <img
         src="/rax-cover-2.jpg"
-        className="pt-20"
+        className="hidden pt-20 md:block"
+        alt=""
+        role="presentation"
+        aria-hidden
+      />
+      <img
+        src="/rax-cover-small.jpg"
+        className="block pt-20 md:hidden"
         alt=""
         role="presentation"
         aria-hidden
       />
 
-      <div className="overflow-hidden relative py-16">
+      <div className="overflow-hidden relative lg:py-16">
         <div className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-lg">
             <h1>
@@ -56,8 +63,6 @@ const RAxWork = () => {
                 className="mt-8 w-full rounded-lg"
                 src="/rax-cover.jpg"
                 alt=""
-                width={1200}
-                height={1000}
               />
             </figure>
           </div>
