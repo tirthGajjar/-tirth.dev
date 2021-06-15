@@ -9,3 +9,7 @@
 [] Develop backend using Nexus, Prisma and Apollo GraphQL with a PostgreSQL Database.
 [] Refactor components
 [] Maybe use, tailwind-styled-components
+
+## Inspirations
+
+https://www.delbaoliveira.com/blog/frontend-challenge

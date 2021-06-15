@@ -132,7 +132,7 @@ const AboutMe = () => {
                     </ExternalLink>
                     , with a friend "Parag Chauhan" (Know more about why and how
                     of starting Knowuser). It has expanded my understanding of
-                    what it takes to build a great product. This has given me
+                    what it takes to build a great product, and given me
                     tremendous amounts of{" "}
                     <span className="font-medium text-yellow-700 dark:text-blue-400">
                       learnings in terms of product management and engineering
@@ -144,8 +144,8 @@ const AboutMe = () => {
                     situation in RAx Labs Inc. and I felt the need of helping
                     the team. I joined as a consultant and{" "}
                     <span className="font-medium text-indigo-700 dark:text-indigo-400">
-                      conducted 100+ rounds of interviews, created a team of 8
-                      engineers from scratch.{" "}
+                      conducted 100+ rounds of interviews, built (hired and
+                      mentored) a team of 8 engineers from scratch.{" "}
                     </span>
                   </p>
                   <p>
