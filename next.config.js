@@ -5,11 +5,10 @@
  **/
 
 // @ts-ignore
-const withTM = require("next-transpile-modules");
+const withTM = require("next-transpile-modules")(["next-usequerystate"]);
 
 // @ts-ignore
 module.exports = withTM({
-  transpileModules: ["next-usequerystate"],
   webpack5: true,
   future: {
     strictPostcssConfiguration: true,
