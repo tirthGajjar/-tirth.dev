@@ -2,8 +2,8 @@
 const withTM = require("next-transpile-modules")(["next-usequerystate"]);
 
 module.exports = withTM({
+  webpack5: true,
   future: {
-    webpack5: true,
     strictPostcssConfiguration: true,
   },
   reactStrictMode: true,
