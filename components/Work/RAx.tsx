@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import RAxCoverImage from "@/assets/images/rax-cover.jpg";
 import ExternalLink from "@/components/generic/ExternalLink";
+import Image from "next/image";
 import Link from "next/link";
 
 const RAxWorkEx = () => {
@@ -48,10 +50,12 @@ const RAxWorkEx = () => {
           <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
             <div className="overflow-hidden relative h-96 rounded-2xl shadow-xl">
-              <img
+              <Image
                 className="object-cover absolute inset-0 w-full h-full"
-                src="/rax-cover.jpg"
+                src={RAxCoverImage}
                 alt=""
+                layout="fill"
+                // placeholder="blur"
               />
             </div>
           </div>

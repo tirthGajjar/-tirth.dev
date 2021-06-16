@@ -1,3 +1,5 @@
+import KnowuserCoverImage from "@/assets/images/knowuser-cover.jpg";
+import Image from "next/image";
 import ExternalLink from "../generic/ExternalLink";
 
 const KnowuserWorkEx = () => {
@@ -188,10 +190,11 @@ const KnowuserWorkEx = () => {
           <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
             <div className="overflow-hidden relative h-96 rounded-2xl shadow-xl">
-              <img
+              <Image
                 className="object-cover absolute inset-0 w-full h-full"
-                src="/knowuser-cover.jpg"
+                src={KnowuserCoverImage}
                 alt=""
+                layout="fill"
               />
             </div>
           </div>
