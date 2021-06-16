@@ -5,14 +5,16 @@ interface IProps {
   href: string;
   target?: string;
   rel?: string;
+  className?: string;
   showIcon?: boolean;
   getProps?: () => void;
 }
 
-const Link: React.FC<IProps> = ({
+export const Link: React.FC<IProps> = ({
   href,
   target,
   rel,
+  className = "",
   showIcon = false,
   getProps = () => ({}),
   children,
@@ -32,7 +34,7 @@ const Link: React.FC<IProps> = ({
   }
 
   // By default, external links should open in a new tab.
-  // This is overrideable though.
+  // This is can be overridden though.
   if (typeof target === "undefined") {
     target = linkType === "external" ? "_blank" : "";
   }
@@ -41,11 +43,16 @@ const Link: React.FC<IProps> = ({
 
   const additionalProps = typeof getProps === "function" ? getProps() : {};
 
-  // Next links require a different sort of funky-dunky syntax.
+  // Next links require a different sort of funky syntax.
   if (linkType === "internal") {
     return (
       <NextLink passHref href={href}>
-        <a target={target} rel={safeRel} {...additionalProps}>
+        <a
+          target={target}
+          rel={safeRel}
+          className={className}
+          {...additionalProps}
+        >
           {children}
         </a>
       </NextLink>
@@ -53,7 +60,13 @@ const Link: React.FC<IProps> = ({
   }
 
   return (
-    <a href={href} rel={safeRel} target={target} {...additionalProps}>
+    <a
+      href={href}
+      rel={safeRel}
+      target={target}
+      className={className}
+      {...additionalProps}
+    >
       {children}
       {showIcon && (
         <svg
@@ -74,5 +87,3 @@ const Link: React.FC<IProps> = ({
     </a>
   );
 };
-
-export default Link;

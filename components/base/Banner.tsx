@@ -1,3 +1,4 @@
+import Link from "@/components/base/Link";
 import { useTheme } from "next-themes";
 import React from "react";
 
@@ -150,12 +151,12 @@ const Banner: React.FC<Props> = ({ show, text, smallText = "" }) => {
                 <span className="hidden md:inline">{text}</span>
               </p>
               <div className="flex-shrink-0 order-3 mt-2 w-full sm:order-2 sm:mt-0 sm:w-auto">
-                <a
+                <Link
                   href="/appcues"
                   className="flex justify-center items-center py-2 px-4 text-sm font-medium text-yellow-300 bg-gray-900 rounded-md border border-transparent shadow-sm hover:bg-gray-100"
                 >
                   Open
-                </a>
+                </Link>
               </div>
             </div>
             {/* <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-2">

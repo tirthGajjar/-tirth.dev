@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import RAxCoverImage from "@/assets/images/rax-cover.jpg";
-import ExternalLink from "@/components/generic/ExternalLink";
+import { Link } from "@/components/base/Link";
 import Image from "next/image";
-import Link from "next/link";
 
 const RAxWorkEx = () => {
   return (
@@ -85,9 +84,9 @@ const RAxWorkEx = () => {
                     d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
                   ></path>
                 </svg>
-                <a className="font-medium" href="https://raxter.io">
+                <Link className="font-medium" href="https://raxter.io">
                   raxter.io
-                </a>
+                </Link>
               </div>
             </div>
             <div className="text-base font-semibold tracking-wide text-indigo-600 uppercase dark:text-yellow-300">
@@ -96,14 +95,14 @@ const RAxWorkEx = () => {
 
             <div className="mt-6 space-y-6 text-gray-700 dark:text-indigo-100">
               <p className="text-sm text-gray-600 dark:text-gray-200">
-                <ExternalLink
+                <Link
                   href="https://raxter.io"
                   getProps={() => ({
                     className: "dark:text-white font-semibold underline",
                   })}
                 >
                   RAx
-                </ExternalLink>{" "}
+                </Link>{" "}
                 is a web app that assists research scholars to speed up their
                 information discovery, improve understanding of scholarly
                 articles and organize knowledge to be more productive.
@@ -111,7 +110,7 @@ const RAxWorkEx = () => {
 
               <div className="space-y-4">
                 <div>
-                  <a
+                  <Link
                     href="/work/rax/#product-architect"
                     className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
@@ -139,7 +138,7 @@ const RAxWorkEx = () => {
       />
      </svg>
      </span> */}
-                  </a>
+                  </Link>
                 </div>
                 <div className="prose prose-lg font-normal dark:text-indigo-100">
                   <p>
@@ -184,29 +183,27 @@ const RAxWorkEx = () => {
     ))}
    </dl> */}
             <div className="mt-10">
-              <Link passHref href="/work/RAx">
-                <a
-                  href="/work/RAx"
-                  className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
+              <Link
+                href="/work/RAx"
+                className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
+              >
+                Learn more about my work at RAx Labs
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="mx-1 w-5 h-5"
+                  aria-hidden="true"
+                  role="presentation"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  Learn more about my work at RAx Labs
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mx-1 w-5 h-5"
-                    aria-hidden="true"
-                    role="presentation"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </a>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
               </Link>
             </div>
           </div>

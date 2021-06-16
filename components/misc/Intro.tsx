@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/generic/ExternalLink";
+import { Link } from "@/components/base/Link";
 import WavingHand from "@/components/misc/WavingHand";
 import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
@@ -59,11 +59,10 @@ function Intro(): ReactElement {
                 </span>
               </RoughNotation>
               I work as the Product Architect at{" "}
-              <a href="https://www.linkedin.com/company/rax-labs/">
+              <Link href="https://www.linkedin.com/company/rax-labs/">
                 RAx Labs Inc.
-              </a>{" "}
-              on product{" "}
-              <ExternalLink href="https://raxter.io">raxter.io</ExternalLink>. I
+              </Link>{" "}
+              on product <Link href="https://raxter.io">raxter.io</Link>. I
               thrive to build products and engineering teams from ground up and
               have successfully done so over the last 3 years.
             </p>

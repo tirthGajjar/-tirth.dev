@@ -1,4 +1,5 @@
-import ExternalLink from "@/components/generic/ExternalLink";
+import { Link } from "@/components/base/Link";
+
 const AboutMe = () => {
   return (
     <div className="relative py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] mx-auto px-4 md:px-0">
@@ -6,11 +7,11 @@ const AboutMe = () => {
         <div className="mx-auto max-w-max">
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="prose max-w-prose text-base dark:prose-light lg:max-w-none">
-              <a href="#about-me-section" className="!no-underline">
+              <Link href="#about-me-section" className="!no-underline">
                 <h1 id="about-me-section" className="tracking-wide">
                   About me
                 </h1>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative">
@@ -89,12 +90,10 @@ const AboutMe = () => {
                   </p>
                   <p>
                     I started working as data engineer in my first job at{" "}
-                    <ExternalLink href="https://maqsoftware.com/">
-                      MAQ Software
-                    </ExternalLink>
-                    , and then explored a lot of technologies which excited me.
-                    As I was very keen on learning new technologies and
-                    identifying use-cases, I{" "}
+                    <Link href="https://maqsoftware.com/">MAQ Software</Link>,
+                    and then explored a lot of technologies which excited me. As
+                    I was very keen on learning new technologies and identifying
+                    use-cases, I{" "}
                     <span className="font-medium text-red-500">
                       cleared 9+ Microsoft certification exams in less than a
                       year,
@@ -108,9 +107,7 @@ const AboutMe = () => {
                     I wanted to work with a rapidly growing SaaS to gain actual
                     product building experience, not just as a developer. So, I
                     joined{" "}
-                    <ExternalLink href="https://www.saleshandy.com/">
-                      SalesHandy
-                    </ExternalLink>{" "}
+                    <Link href="https://www.saleshandy.com/">SalesHandy</Link>{" "}
                     as a Senior Software Engineer. My main focus was to{" "}
                     <span className="font-medium text-blue-700 dark:text-yellow-400">
                       improve the engineering processes, building the product's
@@ -127,13 +124,11 @@ const AboutMe = () => {
                   <p>
                     I have been wanting to build a product from ideas to
                     successful product. I started working on{" "}
-                    <ExternalLink href="https://knowuser.com">
-                      Knowuser
-                    </ExternalLink>
-                    , with a friend "Parag Chauhan" (Know more about why and how
-                    of starting Knowuser). It has expanded my understanding of
-                    what it takes to build a great product, and given me
-                    tremendous amounts of{" "}
+                    <Link href="https://knowuser.com">Knowuser</Link>, with a
+                    friend "Parag Chauhan" (Know more about why and how of
+                    starting Knowuser). It has expanded my understanding of what
+                    it takes to build a great product, and given me tremendous
+                    amounts of{" "}
                     <span className="font-medium text-yellow-700 dark:text-blue-400">
                       learnings in terms of product management and engineering
                       systems design.{" "}
@@ -155,7 +150,7 @@ const AboutMe = () => {
                     <span className="font-medium text-gray-700 dark:text-amber-400">
                       redesigned the most critical parts of the system.{" "}
                     </span>
-                    <ExternalLink href="/work/RAx">Learn more</ExternalLink>
+                    <Link href="/work/RAx">Learn more</Link>
                   </p>
                   {/* <p>
                     At RAx Labs Inc., I had excellent experience building the
@@ -172,9 +167,8 @@ const AboutMe = () => {
                 </div>
               </div>
               <div className="inline-flex mt-8 rounded-md shadow">
-                <a
+                <Link
                   href="/Tirth-Gajjar--Product-Architect-Resume.pdf"
-                  target="_blank"
                   className="inline-flex items-center py-2 px-4 text-base font-medium text-white bg-indigo-600 rounded-md border border-transparent shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <svg
@@ -193,7 +187,7 @@ const AboutMe = () => {
                     />
                   </svg>
                   Resume
-                </a>
+                </Link>
               </div>
             </div>
           </div>

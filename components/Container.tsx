@@ -1,20 +1,14 @@
-import Footer from "@/components/Footer";
-import ThemeSwitcher from "@/components/misc/ThemeSwitcher";
-import NavLink from "@/components/NavLink";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface Props {
   date?: string;
 }
 
 const Container: React.FC<Props> = ({ children, ...customMeta }) => {
-  const [mounted, setMounted] = useState(false);
-
-  // After mounting, we have access to the theme
-  useEffect(() => setMounted(true), []);
-
   const router = useRouter();
   const meta = {
     title: "Tirth Gajjar – Full Stack developer, Leader and a Notion pro.",
@@ -46,27 +40,11 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="my-0 w-full text-gray-900 bg-white bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-50 dark:text-gray-100 sticky-nav">
-        <div className="flex justify-between items-center py-4 px-4 mx-auto -mb-20 w-full max-w-4xl lg:max-w-7xl md:px-8">
-          <a
-            href="#skip"
-            className="absolute -top-8 py-2 px-4 transition-transform duration-200 transform -translate-y-12 focus:translate-y-3"
-          >
-            Skip to content
-          </a>
-
-          {mounted ? <ThemeSwitcher /> : <div></div>}
-          <div className="space-x-4">
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/blog">Blog</NavLink>
-            <NavLink href="/about">About</NavLink>
-          </div>
-        </div>
-      </nav>
+      <Header />
       <main id="skip" className="flex flex-col justify-center bg-transparent">
         {children}
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };

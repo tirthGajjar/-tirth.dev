@@ -19,7 +19,7 @@ interface Props extends HTMLMotionProps<"button"> {
   size?: ButtonSize;
 }
 
-const Button: React.FC<Props> = ({ children, onClick }) => {
+export const Button: React.FC<Props> = ({ children, onClick }) => {
   return (
     <motion.button
       type="button"
@@ -45,5 +45,3 @@ const Button: React.FC<Props> = ({ children, onClick }) => {
     </motion.button>
   );
 };
-
-export default Button;

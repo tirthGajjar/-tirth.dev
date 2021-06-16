@@ -1,6 +1,6 @@
 import SocialButtons from "@/components/misc/SocialButtons";
 import React from "react";
-import NewsLetter from "./NewsLetter";
+import NewsLetter from "../NewsLetter";
 
 const Footer: React.FC = () => {
   return (

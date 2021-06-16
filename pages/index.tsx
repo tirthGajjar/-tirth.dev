@@ -1,6 +1,7 @@
 import AboutMe from "@/components/AboutMe";
+import Banner from "@/components/base/Banner";
+import Link from "@/components/base/Link";
 import Container from "@/components/Container";
-import Banner from "@/components/generic/Banner";
 import Intro from "@/components/misc/Intro";
 import Knowuser from "@/components/Work/Knowuser";
 // import Work from "@/components/Work";
@@ -22,12 +23,12 @@ const Home: React.FC = ({ children }) => {
         <div className="flex flex-col justify-center items-center py-20 px-4 min-h-screen md:px-8 lg:px-0">
           <Intro />
           <div className="flex justify-start items-center w-full">
-            <a
+            <Link
               href="#about-me-section"
               className="inline-flex items-center py-2 px-4 text-base font-medium text-white bg-indigo-600 rounded-md border border-transparent shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               About me
-            </a>
+            </Link>
           </div>
         </div>
         <AboutMe />

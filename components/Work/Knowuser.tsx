@@ -1,6 +1,6 @@
 import KnowuserCoverImage from "@/assets/images/knowuser-cover.jpg";
+import { Link } from "@/components/base/Link";
 import Image from "next/image";
-import ExternalLink from "../generic/ExternalLink";
 
 const KnowuserWorkEx = () => {
   return (
@@ -30,9 +30,9 @@ const KnowuserWorkEx = () => {
                     d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
                   ></path>
                 </svg>
-                <a className="font-medium" href="https://knowuser.com">
+                <Link className="font-medium" href="https://knowuser.com">
                   knowuser.com
-                </a>
+                </Link>
               </div>
             </div>
             <div className="text-base font-semibold tracking-wide text-indigo-600 uppercase dark:text-yellow-300">
@@ -41,14 +41,14 @@ const KnowuserWorkEx = () => {
 
             <div className="mt-6 space-y-6 text-gray-700 dark:text-indigo-100">
               <p className="text-sm text-gray-600 dark:text-gray-200">
-                <ExternalLink
+                <Link
                   href="https://knowuser.com"
                   getProps={() => ({
                     className: "dark:text-white font-semibold underline",
                   })}
                 >
                   Knowuser
-                </ExternalLink>{" "}
+                </Link>{" "}
                 is a framework and tool to solve problems with in-app user
                 engagement, aimed at providing all gorwth hacking tools at a
                 single place. Taking actions based on users' behavior is still a
@@ -58,7 +58,7 @@ const KnowuserWorkEx = () => {
 
               <div className="space-y-4">
                 <div>
-                  <a
+                  <Link
                     href="/work/knowuser"
                     className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
@@ -86,7 +86,7 @@ const KnowuserWorkEx = () => {
       />
      </svg>
      </span> */}
-                  </a>
+                  </Link>
                 </div>
                 <div className="prose prose-lg font-normal dark:text-indigo-100">
                   <p>
@@ -123,7 +123,7 @@ const KnowuserWorkEx = () => {
     ))}
    </dl> */}
             <div className="mt-10">
-              <a
+              <Link
                 href="/work/knowuser"
                 className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
               >
@@ -144,7 +144,7 @@ const KnowuserWorkEx = () => {
                     d="M13 7l5 5m0 0l-5 5m5-5H6"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

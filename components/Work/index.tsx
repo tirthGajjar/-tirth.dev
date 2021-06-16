@@ -1,3 +1,4 @@
+import Link from "@/components/base/Link";
 import React from "react";
 
 const posts = [
@@ -79,35 +80,35 @@ const Work = () => {
             <div className="flex flex-col flex-1 justify-between p-6">
               <div className="flex-1">
                 <p className="text-sm font-medium text-indigo-600">
-                  <a href={post.category.href} className="hover:underline">
+                  <Link href={post.category.href} className="hover:underline">
                     {post.category.name}
-                  </a>
+                  </Link>
                 </p>
-                <a href={post.href} className="block mt-2">
+                <Link href={post.href} className="block mt-2">
                   <p className="text-xl font-semibold text-gray-900">
                     {post.title}
                   </p>
                   <p className="mt-3 text-base text-gray-500">
                     {post.description}
                   </p>
-                </a>
+                </Link>
               </div>
               <div className="flex items-center mt-6">
                 <div className="flex-shrink-0">
-                  <a href={post.author.href}>
+                  <Link href={post.author.href}>
                     <span className="sr-only">{post.author.name}</span>
                     <img
                       className="w-10 h-10 rounded-full"
                       src={post.author.imageUrl}
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="ml-3">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href={post.author.href} className="hover:underline">
+                    <Link href={post.author.href} className="hover:underline">
                       {post.author.name}
-                    </a>
+                    </Link>
                   </p>
                   <div className="flex space-x-1 text-sm text-gray-500">
                     <time dateTime={post.datetime}>{post.date}</time>
