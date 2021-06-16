@@ -26,13 +26,13 @@ function Intro(): ReactElement {
           <h1>
             Hey,{" "}
             <span className="block md:inline-block">
-              I'm Tirth Gajjar
+              I&apos;m Tirth Gajjar
               <WavingHand />
             </span>
           </h1>
           <div className="my-6 text-lg leading-loose md:text-xl">
             <p>
-              I'm a
+              I&apos;m a
               <RoughNotation
                 {...roughNotationProps}
                 color={resolvedTheme === "dark" ? "#B91C1C" : "#CFFAFE"}

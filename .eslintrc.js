@@ -5,6 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
+    "next",
     "eslint:recommended",
     "plugin:cypress/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -18,6 +19,13 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": [
       "error",
       { argsIgnorePattern: "^_", varsIgnorePattern: "[iI]gnored" },
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        component: true,
+        html: true,
+      },
     ],
     // Disallow imports from src/server/ in src/pages/ except for src/pages/api
     // (see the "overrides" section for the exception)

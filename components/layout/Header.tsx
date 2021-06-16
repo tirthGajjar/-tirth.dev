@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           Skip to content
         </Link>
 
-        {ifThemeCanBeSet ? <ThemeSwitcher /> : <div></div>}
+        {ifThemeCanBeSet ? <ThemeSwitcher /> : <div />}
         <div className="space-x-4">
           {headerLinks.map(({ label, link }) => {
             return (

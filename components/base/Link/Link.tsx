@@ -1,11 +1,13 @@
 import NextLink from "next/link";
 import React from "react";
+import { HiLink } from "react-icons/hi";
 
 interface IProps {
   href: string;
   target?: string;
   rel?: string;
   className?: string;
+  ariaLabel?: string;
   showIcon?: boolean;
   getProps?: () => void;
 }
@@ -15,6 +17,7 @@ export const Link: React.FC<IProps> = ({
   target,
   rel,
   className = "",
+  ariaLabel = "",
   showIcon = false,
   getProps = () => ({}),
   children,
@@ -51,6 +54,7 @@ export const Link: React.FC<IProps> = ({
           target={target}
           rel={safeRel}
           className={className}
+          aria-label={ariaLabel}
           {...additionalProps}
         >
           {children}
@@ -65,24 +69,16 @@ export const Link: React.FC<IProps> = ({
       rel={safeRel}
       target={target}
       className={className}
+      aria-label={ariaLabel}
       {...additionalProps}
     >
       {children}
       {showIcon && (
-        <svg
+        <HiLink
           className="inline-block px-1 w-6 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-          ></path>
-        </svg>
+          role="presentation"
+          aria-hidden
+        />
       )}
     </a>
   );

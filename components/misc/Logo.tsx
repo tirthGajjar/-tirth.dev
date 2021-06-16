@@ -1,5 +1,5 @@
+import { Link } from "@/components/base/Link";
 import clsx from "clsx";
-import Link from "next/link";
 
 export interface size {
   [key: string]: {
@@ -8,7 +8,7 @@ export interface size {
   };
 }
 
-const sqaureSizes: size = {
+const squareSizes: size = {
   default: {
     height: 32,
     width: 32,
@@ -37,7 +37,7 @@ interface IProps {
 }
 
 const Logo = ({ size = "default", loading = false }: IProps) => {
-  const logoSize = sqaureSizes[size];
+  const logoSize = squareSizes[size];
   return (
     <Link href="/">
       <svg

@@ -1,9 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import RAxCoverImage from "@/assets/images/rax-cover.jpg";
 import { Link } from "@/components/base/Link";
+import { Pill } from "@/components/base/Pill";
 import Image from "next/image";
+import { HiArrowNarrowRight, HiLink } from "react-icons/hi";
 
-const RAxWorkEx = () => {
+export const RAxWorkEx = () => {
   return (
     <div className="relative dark:text-indigo-100 py-16 sm:py-24 min-w-[100vw] overflow-x-hidden max-w-[100vw] px-4 lg:px-0">
       <div className="flex flex-col dark:flex-col lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -70,20 +71,7 @@ const RAxWorkEx = () => {
                 </span>
               </h2>
               <div className="flex items-center space-x-1 text-gray-600 dark:text-gray-300">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                  ></path>
-                </svg>
+                <HiLink className="w-5 h-5" role="presentation" aria-hidden />
                 <Link className="font-medium" href="https://raxter.io">
                   raxter.io
                 </Link>
@@ -114,30 +102,7 @@ const RAxWorkEx = () => {
                     href="/work/rax/#product-architect"
                     className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
-                    <span className="inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none">
-                      Product Architect cum Tech Lead
-                    </span>
-                    {/* <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
-     Product Architect
-    </span> */}
-                    {/* <span className="inline-flex items-center ml-4 text-sm">
-     Learn more
-     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="ml-1 w-5 h-5"
-      aria-hidden="true"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-     >
-      <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9 5l7 7-7 7"
-      />
-     </svg>
-     </span> */}
+                    <Pill> Product Architect cum Tech Lead</Pill>
                   </Link>
                 </div>
                 <div className="prose prose-lg font-normal dark:text-indigo-100">
@@ -165,47 +130,18 @@ const RAxWorkEx = () => {
             </div>
           </div>
 
-          {/* Stats section */}
           <div className="mt-10">
-            {/* <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-    {stats.map((stat) => (
-    <div
-     key={stat.label}
-     className="pt-6 border-t-2 border-gray-100"
-    >
-     <dt className="text-base font-medium text-gray-500">
-     {stat.label}
-     </dt>
-     <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-     {stat.value}
-     </dd>
-    </div>
-    ))}
-   </dl> */}
-            <div className="mt-10">
-              <Link
-                href="/work/RAx"
-                className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
-              >
-                Learn more about my work at RAx Labs
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mx-1 w-5 h-5"
-                  aria-hidden="true"
-                  role="presentation"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </Link>
-            </div>
+            <Link
+              href="/work/RAx"
+              className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300 hover:space-x-8"
+            >
+              Learn more about my work at RAx Labs
+              <HiArrowNarrowRight
+                className="mx-1 w-5 h-5"
+                aria-hidden="true"
+                role="presentation"
+              />
+            </Link>
           </div>
         </div>
       </div>

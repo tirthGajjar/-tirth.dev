@@ -1,11 +1,9 @@
 import AboutMe from "@/components/AboutMe";
 import Banner from "@/components/base/Banner";
-import Link from "@/components/base/Link";
+import { Link } from "@/components/base/Link";
 import Container from "@/components/Container";
 import Intro from "@/components/misc/Intro";
-import Knowuser from "@/components/Work/Knowuser";
-// import Work from "@/components/Work";
-import RAx from "@/components/Work/RAx";
+import { KnowuserWorkEx, RAxWorkEx } from "@/components/WorkExperienceSummary";
 import { useQueryState } from "next-usequerystate";
 import { useEffect, useRef } from "react";
 
@@ -15,7 +13,7 @@ const Home: React.FC = ({ children }) => {
 
   useEffect(() => {
     setSource(null);
-  }, []);
+  }, [setSource]);
 
   return (
     <Container>
@@ -24,6 +22,7 @@ const Home: React.FC = ({ children }) => {
           <Intro />
           <div className="flex justify-start items-center w-full">
             <Link
+              ariaLabel="skip to about me section"
               href="#about-me-section"
               className="inline-flex items-center py-2 px-4 text-base font-medium text-white bg-indigo-600 rounded-md border border-transparent shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
@@ -32,9 +31,10 @@ const Home: React.FC = ({ children }) => {
           </div>
         </div>
         <AboutMe />
-        {/* <Work /> */}
-        <RAx></RAx>
-        <Knowuser />
+        <section aria-label="work experience">
+          <RAxWorkEx />
+          <KnowuserWorkEx />
+        </section>
         <Banner
           show={
             !!sourceRef.current &&

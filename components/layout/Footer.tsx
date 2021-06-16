@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <>
       <NewsLetter />
       <footer className="py-8 mx-auto w-full max-w-4xl">
-        <hr className="py-1 border-none animated-gradient"></hr>
+        <hr className="py-1 border-none animated-gradient" />
         <div className="flex flex-col md:items-center md:justify-between">
           <SocialButtons />
           <div className="mt-8 md:mt-0 md:order-1">

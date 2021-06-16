@@ -26,7 +26,7 @@ const Challenges = () => {
       <ul>
         <li>
           RAx had a lot of technical debt, the team was focused on the AI side
-          of the things, the user's side of the product suffered.
+          of the things, the user&apos;s side of the product suffered.
         </li>
       </ul>
       <ul>
@@ -51,8 +51,9 @@ const Challenges = () => {
       <h3>Building the team with very limited resources.</h3>
       <ul>
         <li>
-          When I joined, RAx didn't have significant financial resources, So, I
-          had to find excellent engineering resources with a constrained budget.
+          When I joined, RAx didn&apos;t have significant financial resources,
+          So, I had to find excellent engineering resources with a constrained
+          budget.
         </li>
       </ul>
       <h3>

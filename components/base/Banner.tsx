@@ -1,4 +1,4 @@
-import Link from "@/components/base/Link";
+import { Link } from "@/components/base/Link";
 import { useTheme } from "next-themes";
 import React from "react";
 

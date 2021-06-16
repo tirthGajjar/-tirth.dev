@@ -16,9 +16,9 @@ import React from "react";
 // }
 
 const Blog = ({
-      post,
-      ogImage,
-    }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  post,
+  ogImage,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { isFallback } = useRouter();
 
   // If the page is not yet generated, this will be displayed

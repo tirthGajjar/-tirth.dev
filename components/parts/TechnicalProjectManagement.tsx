@@ -142,8 +142,8 @@ const Tpm = () => {
               cases for functions they write.
             </li>
             <li>
-              While in development only, some demo's are scheduled. TMP and the
-              tech-lead provides feedback on the demo and changes are
+              While in development only, some demo&apos;s are scheduled. TMP and
+              the tech-lead provides feedback on the demo and changes are
               incorporated.
             </li>
           </ul>
