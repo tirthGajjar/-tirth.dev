@@ -1,7 +1,15 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withTM = require("next-transpile-modules")(["next-usequerystate"]);
+/* eslint-disable @typescript-eslint/no-var-requires */
+// @ts-check
+/**
+ * @type {import('next/dist/next-server/server/config').NextConfig}
+ **/
 
+// @ts-ignore
+const withTM = require("next-transpile-modules");
+
+// @ts-ignore
 module.exports = withTM({
+  transpileModules: ["next-usequerystate"],
   webpack5: true,
   future: {
     strictPostcssConfiguration: true,

@@ -7,7 +7,7 @@ import Tpm from "@/components/parts/TechnicalProjectManagement";
 import UpperPart from "@/components/parts/UpperPart";
 import Image from "next/image";
 
-const RAxWork = (props) => {
+const RAxWork: React.FC = () => {
   return (
     <Container>
       <div className="hidden pt-20 md:block">
