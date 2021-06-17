@@ -10,7 +10,9 @@
     "eslint": "eslint --cache --cache-location=node_modules/.cache/.eslintcache --fix",
     "lint": "yarn run eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.6.0",
@@ -50,12 +52,19 @@
     "use-sound": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
     "@next/eslint-plugin-next": "^11.0.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/builder-webpack5": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "@types/node": "^15.12.2",
     "@types/qs": "^6.9.6",
     "@types/react": "17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
+    "babel-loader": "^8.2.2",
     "chalk": "^4.1.1",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
