@@ -1,5 +1,6 @@
 import RAxCoverImageFull from "@/assets/images/rax-cover-2.jpg";
 import RAxCoverImageMobile from "@/assets/images/rax-cover-mobile.jpg";
+import RAxCoverImage from "@/assets/images/rax-cover.jpg";
 import Container from "@/components/Container";
 import Challenges from "@/components/parts/Challenges";
 import TechnicalDetails from "@/components/parts/TechnicalDetails";
@@ -14,10 +15,9 @@ const RAxWork: React.FC = () => {
         <Image
           src={RAxCoverImageFull}
           alt=""
-          width={1584}
-          height={396}
           layout="responsive"
           role="presentation"
+          placeholder="blur"
           aria-hidden
         />
       </div>
@@ -26,10 +26,9 @@ const RAxWork: React.FC = () => {
           src={RAxCoverImageMobile}
           className="block pt-20 md:hidden"
           alt=""
-          width={751}
-          height={396}
           layout="responsive"
           role="presentation"
+          placeholder="blur"
           aria-hidden
         />
       </div>
@@ -58,11 +57,15 @@ const RAxWork: React.FC = () => {
               understanding of how qualitative research is produced with
               need-driven Artificial Intelligence and innovative design.
             </p>
-            <figure>
-              <div className="mt-8 w-full rounded-lg">
-                <Image src="/rax-cover.jpg" alt="" width={1200} height={550} />
-              </div>
-            </figure>
+            <div className="overflow-hidden relative mt-8 w-3/4 h-96 rounded-2xl shadow-xl max-auto">
+              <Image
+                className="object-cover absolute inset-0 w-full h-full"
+                src={RAxCoverImage}
+                alt=""
+                layout="fill"
+                placeholder="blur"
+              />
+            </div>
           </div>
           <div className="prose prose-lg mx-auto mt-6 max-w-4xl text-gray-800 dark:text-gray-200 dark:prose-light prose-indigo">
             <UpperPart />

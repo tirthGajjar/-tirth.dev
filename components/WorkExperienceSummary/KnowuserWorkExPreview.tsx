@@ -150,6 +150,7 @@ export const KnowuserWorkEx = () => {
                 src={KnowuserCoverImage}
                 alt=""
                 layout="fill"
+                placeholder="blur"
               />
             </div>
           </div>
