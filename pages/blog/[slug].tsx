@@ -2,7 +2,7 @@ import BlogLayout from "@/layouts/Blog";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
 import { PostType } from "@/types/posts";
 // import { FrontMatterPost } from "@/types/posts";
-import getOgImage from "lib/generate-opengraph-images";
+// import getOgImage from "lib/generate-opengraph-images";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { MDXRemote } from "next-mdx-remote";
 import { useRouter } from "next/router";
@@ -64,12 +64,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     //  // TODO: write proper return types for getTweets
     //  post.tweetIDs.length > 0 ? await getTweets(post.tweetIDs) : {};
 
-    const ogImage = await getOgImage({
-      title: post.frontMatter.title,
-      background: post.frontMatter.colorFeatured,
-      color: post.frontMatter.fontFeatured,
-    });
-    return { props: { post, ogImage } };
+    // const ogImage = await getOgImage({
+    //   title: post.frontMatter.title,
+    //   background: post.frontMatter.colorFeatured,
+    //   color: post.frontMatter.fontFeatured,
+    // });
+    return { props: { post, ogImage: "" } };
   } catch (error) {
     // eslint-disable-next-line
     console.log(error);
