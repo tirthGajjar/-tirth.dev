@@ -1,8 +1,9 @@
-import RAxCoverImage from "@/assets/images/rax-cover.jpg";
+import RAxCoverImage from "@/assets/images/rax-cover.png";
 import { Link } from "@/components/base/Link";
 import { Pill } from "@/components/base/Pill";
 import Image from "next/image";
 import { HiArrowNarrowRight, HiLink } from "react-icons/hi";
+import { Highlight } from "../base/Highlight/Highlight";
 
 export const RAxWorkEx = () => {
   return (
@@ -85,9 +86,7 @@ export const RAxWorkEx = () => {
               <p className="text-sm text-gray-600 dark:text-gray-200">
                 <Link
                   href="https://raxter.io"
-                  getProps={() => ({
-                    className: "dark:text-white font-semibold underline",
-                  })}
+                  className="font-semibold underline dark:text-white"
                 >
                   RAx
                 </Link>{" "}
@@ -108,20 +107,22 @@ export const RAxWorkEx = () => {
                 <div className="prose prose-lg font-normal dark:text-indigo-100">
                   <p>
                     As a product architect, I redesigned the architecture to
-                    achieve
-                    <span className="px-1 italic font-semibold text-red-600 dark:text-green-400">
-                      4 nines of availability,
-                    </span>
-                    improved scalability and achieved costs reductions up to{" "}
-                    <span className="text-lg font-semibold text-indigo-600 dark:text-yellow-400">
-                      34%
-                    </span>
-                    , using different AWS services and serverless-framework.
+                    <Highlight preset="SNOW_MINT">
+                      achieve 4 nines of availability,
+                    </Highlight>
+                    improved scalability and achieved
+                    <Highlight
+                      preset="ALIZARIN_CRIMSON"
+                      className="text-lg font-semibold"
+                    >
+                      up to 34% reduction in cloud costs
+                    </Highlight>
+                    , using different AWS services and Serverless architecture.
                   </p>
                   <p>
-                    <span className="pr-1 italic font-semibold text-red-600 dark:text-green-400">
+                    <Highlight preset="ZUMTHOR" className="ml-0">
                       Created, led and mentored a team of 8 engineers
-                    </span>
+                    </Highlight>
                     from 0 after filtering 500+ applications and conducting a
                     total of 100+ rounds of interviews.
                   </p>

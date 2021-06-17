@@ -1,3 +1,4 @@
+import { Highlight } from "@/components/base/Highlight";
 import { Link } from "@/components/base/Link";
 import { HiOutlineDownload } from "react-icons/hi";
 
@@ -83,7 +84,7 @@ const AboutMe = () => {
                   fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
                 />
               </svg>
-              <div className="relative mx-auto md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl lg:px-16 lg:max-w-5xl xl:max-w-6xl md:dark:bg-gray-900 md:dark:bg-opacity-95">
+              <div className="relative mx-auto xl:max-w-6xl lg:px-16 lg:max-w-5xl md:dark:bg-gray-900 md:dark:bg-opacity-95 md:bg-opacity-90 md:bg-gray-50 md:p-6 md:max-w-4xl">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                   <div className="prose prose-lg font-normal dark:prose-light lg:max-w-none">
                     <p>
@@ -95,28 +96,34 @@ const AboutMe = () => {
                       <Link href="https://maqsoftware.com/">MAQ Software</Link>,
                       and then explored a lot of technologies which excited me.
                       As I was very keen on learning new technologies and
-                      identifying use-cases, I{" "}
-                      <span className="font-medium text-red-500">
+                      identifying use-cases, I
+                      <Highlight preset="KARRY">
                         cleared 9+ Microsoft certification exams in less than a
                         year,
-                      </span>{" "}
-                      which got the opportunity to{" "}
-                      <span className="font-medium text-red-500">
+                      </Highlight>
+                      which got the opportunity to
+                      <Highlight preset="KARRY">
                         co-lead the tech-research team.
-                      </span>{" "}
+                      </Highlight>
                     </p>
                     <p>
                       I wanted to work with a rapidly growing SaaS to gain
                       actual product building experience, not just as a
                       developer. So, I joined{" "}
                       <Link href="https://www.saleshandy.com/">SalesHandy</Link>{" "}
-                      as a Senior Software Engineer. My main focus was to{" "}
-                      <span className="font-medium text-blue-700 dark:text-yellow-400">
+                      as a Senior Software Engineer. My main focus was to
+                      <Highlight preset="ZUMTHOR">
                         improve the engineering processes, building the
-                        product&apos;s Chrome extension and help the team adopt
-                        best practices in terms of development, testing and
-                        tooling.
-                      </span>
+                        product&apos;s{" "}
+                        <Link
+                          className="!text-current"
+                          href="https://chrome.google.com/webstore/detail/free-email-tracking-sched/acfmebaomboldplijdpfepofggkocgnl?hl=en"
+                        >
+                          Chrome extension
+                        </Link>{" "}
+                        and help the team adopt best practices in terms of
+                        development, testing and tooling.
+                      </Highlight>
                     </p>
                   </div>
                   <div className="prose prose-lg mt-6 font-normal dark:prose-light lg:mt-0">
@@ -127,28 +134,28 @@ const AboutMe = () => {
                       friend &quot;Parag Chauhan&quot; (Know more about why and
                       how of starting Knowuser). It has expanded my
                       understanding of what it takes to build a great product,
-                      and given me tremendous amounts of{" "}
-                      <span className="font-medium text-yellow-700 dark:text-blue-400">
+                      and given me tremendous amounts of
+                      <Highlight preset="CINDERELLA">
                         learnings in terms of product management and engineering
-                        systems design.{" "}
-                      </span>
+                        systems design.
+                      </Highlight>
                     </p>
                     <p>
                       While I was working on Knowuser, I got to know about a
                       situation in RAx Labs Inc. and I felt the need of helping
-                      the team. I joined as a consultant and{" "}
-                      <span className="font-medium text-indigo-700 dark:text-indigo-400">
+                      the team. I joined as a consultant and
+                      <Highlight preset="CANARY">
                         conducted 100+ rounds of interviews, built (hired and
-                        mentored) a team of 8 engineers from scratch.{" "}
-                      </span>
+                        mentored) a team of 8 engineers from scratch.
+                      </Highlight>
                     </p>
                     <p>
                       I had a lot to offer in terms of architecture design and
                       leadership, so I got converted to a full-time employee as
-                      a Product Architect, and{" "}
-                      <span className="font-medium text-gray-700 dark:text-amber-400">
-                        redesigned the most critical parts of the system.{" "}
-                      </span>
+                      a Product Architect, and
+                      <Highlight preset="SNOW_MINT">
+                        redesigned the most critical parts of the system.
+                      </Highlight>
                       <Link href="/work/RAx">Learn more</Link>
                     </p>
                   </div>

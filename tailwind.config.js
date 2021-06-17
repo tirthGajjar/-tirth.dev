@@ -28,6 +28,7 @@ module.exports = {
         cyan: colors.cyan,
         emerald: colors.emerald,
         amber: colors.amber,
+        lightBlue: colors.lightBlue,
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
