@@ -12,15 +12,43 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundSize: {
+        "400%": "400% 400%",
+      },
       keyframes: {
         shine: {
           to: {
             backgroundPosition: "-200% center",
           },
         },
+        halfSpin: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": {
+            transform: "rotate(150deg)",
+          },
+          to: {
+            transform: "rotate(0deg)",
+          },
+        },
+        gradient: {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0% 50%",
+          },
+        },
       },
       animation: {
         shine: "shine 1s linear infinite",
+        "background-spin": "halfSpin 5s ease-in-out infinite",
+        "gradient-slow": "gradient 15s ease infinite",
+        "gradient-fast": "halfSpin 5s ease infinite",
       },
       colors: {
         "yellow-opaque": "rgb(13 42 148 / 18%)",
@@ -28,7 +56,9 @@ module.exports = {
         cyan: colors.cyan,
         emerald: colors.emerald,
         amber: colors.amber,
-        lightBlue: colors.lightBlue,
+        "light-blue": colors.lightBlue,
+        orange: colors.orange,
+        rose: colors.rose,
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],

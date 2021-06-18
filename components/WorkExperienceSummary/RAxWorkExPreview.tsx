@@ -14,7 +14,11 @@ export const RAxWorkEx = () => {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl dark:bg-gray-900 lg:right-72" />
+            <div className="overflow-hidden absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl dark:bg-gray-900 lg:right-72">
+              <div className="w-full h-full origin-center animate-background-spin">
+                <div className="w-full h-full bg-gradient-to-r bg-opacity-50 from-blue-100 to-transparent  dark:bg-gradient-to-r dark:from-emerald-900 dark:to-transparent transform scale-x-[4] scale-y-[4]" />
+              </div>
+            </div>
             <svg
               className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
               width={404}
@@ -106,18 +110,18 @@ export const RAxWorkEx = () => {
                 </div>
                 <div className="prose prose-lg font-normal dark:text-indigo-100">
                   <p>
-                    As a product architect, I redesigned the architecture to
+                    As a product architect, I redesigned the architecture and
                     <Highlight preset="SNOW_MINT">
-                      achieve 4 nines of availability,
+                      achieved 4 nines of availability,
                     </Highlight>
                     improved scalability and achieved
                     <Highlight
-                      preset="ALIZARIN_CRIMSON"
+                      preset="CINDERELLA"
                       className="text-lg font-semibold"
                     >
-                      up to 34% reduction in cloud costs
+                      saved up to 34% in cloud costs,
                     </Highlight>
-                    , using different AWS services and Serverless architecture.
+                    using different AWS services and Serverless architecture.
                   </p>
                   <p>
                     <Highlight preset="ZUMTHOR" className="ml-0">

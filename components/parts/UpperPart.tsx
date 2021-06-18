@@ -22,8 +22,8 @@ const UpperPart = () => {
           organization (Platform team, Web dev team & AI Team).
         </li>
         <li>
-          I have redesigned the systems&apos; architecture to achieve 4 nines of
-          availability, improved scalability and fault tolerance.
+          I have redesigned the systems&apos; architecture and achieved 4 nines
+          of availability, improved scalability and fault tolerance.
         </li>
         <li>
           I have carefully analyzed the entire architecture to identify

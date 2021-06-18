@@ -106,7 +106,12 @@ export const KnowuserWorkEx = () => {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:left-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 left-1/2 w-full bg-gray-50 rounded-l-3xl dark:bg-gray-900 lg:left-72" />
+            <div className="overflow-hidden absolute inset-y-0 left-1/2 w-full bg-gray-50 rounded-l-3xl dark:bg-gray-900 lg:left-72">
+              <div className="w-1/2 h-full origin-center animate-background-spin">
+                <div className="w-full h-full bg-gradient-to-r bg-opacity-50 from-yellow-100 to-transparent dark:bg-gradient-to-r dark:from-pink-800  dark:to-transparent transform scale-x-[4] scale-y-[4]" />
+              </div>
+            </div>
+
             <svg
               className="absolute top-8 right-1/2 -ml-3 lg:-left-8 lg:right-auto lg:top-12"
               width={404}
