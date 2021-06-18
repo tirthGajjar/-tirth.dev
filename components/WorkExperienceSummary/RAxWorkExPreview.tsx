@@ -99,7 +99,7 @@ export const RAxWorkEx = () => {
                 <div>
                   <Link
                     href="/work/rax/#product-architect"
-                    className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
+                    className="block justify-between items-center w-full font-semibold text-indigo-500 no-underline rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <Pill> Product Architect cum Tech Lead</Pill>
                   </Link>

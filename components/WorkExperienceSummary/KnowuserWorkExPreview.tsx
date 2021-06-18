@@ -32,9 +32,7 @@ export const KnowuserWorkEx = () => {
               <p className="text-sm text-gray-600 dark:text-gray-200">
                 <Link
                   href="https://knowuser.com"
-                  getProps={() => ({
-                    className: "dark:text-white font-semibold underline",
-                  })}
+                  className="font-semibold underline dark:text-white"
                 >
                   Knowuser
                 </Link>{" "}
@@ -49,7 +47,7 @@ export const KnowuserWorkEx = () => {
                 <div>
                   <Link
                     href="/work/knowuser"
-                    className="inline-flex justify-between items-center w-full font-semibold text-indigo-500 rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
+                    className="block w-full font-semibold text-indigo-500 no-underline rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <Pill>Co-Founder</Pill>
                   </Link>

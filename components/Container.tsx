@@ -44,6 +44,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
       <main id="skip" className="flex flex-col justify-center bg-transparent">
         {children}
       </main>
+      <div id="popper-portal" />
       <Footer />
     </div>
   );

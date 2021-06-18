@@ -5,3 +5,4 @@ declare module "*.mp3";
 declare module "mdx-prism";
 declare module "*.jpg";
 declare module "*.png";
+declare module "react-useportal";

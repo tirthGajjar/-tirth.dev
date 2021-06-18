@@ -1,8 +1,18 @@
+import clsx from "clsx";
 import React from "react";
 
-export const Pill: React.FC = ({ children }) => {
+interface Props {
+  className?: string;
+}
+
+export const Pill: React.FC<Props> = ({ children, className }) => {
   return (
-    <span className="inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none">
+    <span
+      className={clsx(
+        "inline-flex items-center px-3 py-0.5 rounded bg-indigo-600 text-white text-sm font-medium select-none",
+        className
+      )}
+    >
       {children}
     </span>
   );

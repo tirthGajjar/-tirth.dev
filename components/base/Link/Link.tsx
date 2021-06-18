@@ -1,3 +1,4 @@
+import { LinkPreview } from "@/components/misc/LinkPreview";
 import NextLink from "next/link";
 import React from "react";
 import { HiLink } from "react-icons/hi";
@@ -10,6 +11,7 @@ interface IProps {
   ariaLabel?: string;
   showIcon?: boolean;
   getProps?: () => void;
+  showPreview?: boolean;
 }
 
 export const Link: React.FC<IProps> = ({
@@ -18,6 +20,7 @@ export const Link: React.FC<IProps> = ({
   rel,
   className = "",
   ariaLabel = "",
+  showPreview = true,
   showIcon = false,
   getProps = () => ({}),
   children,
@@ -63,7 +66,7 @@ export const Link: React.FC<IProps> = ({
     );
   }
 
-  return (
+  const Component = (
     <a
       href={href}
       rel={safeRel}
@@ -82,4 +85,10 @@ export const Link: React.FC<IProps> = ({
       )}
     </a>
   );
+
+  if (showPreview && linkType === "external") {
+    return <LinkPreview url={href}>{Component}</LinkPreview>;
+  }
+
+  return Component;
 };
