@@ -42,7 +42,7 @@ const NewsLetter = () => {
         </div>
         <div className="px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
           <Tilt
-            className="z-10 rounded-2xl"
+            className="overflow-hidden z-10 rounded-2xl"
             tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.8}
@@ -94,7 +94,7 @@ const NewsLetter = () => {
                       <input
                         id="cta_email"
                         type="email"
-                        className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm dark:offset-lime-600 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:focus:ring-offset-lime-600 dark:offset-lime-600"
+                        className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:focus:ring-offset-lime-600 dark:offset-lime-600 dark:offset-lime-600"
                         placeholder="Enter your email"
                       />
                     </label>
@@ -102,7 +102,7 @@ const NewsLetter = () => {
                   <div className="mt-4 sm:mt-0 sm:ml-3">
                     <button
                       type="submit"
-                      className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow sm:px-10 dark:offset-lime-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 hover:bg-indigo-400 dark:focus:ring-offset-lime-600 dark:hover:bg-lime-400 dark:text-gray-900 dark:bg-lime-300 dark:offset-lime-600"
+                      className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow dark:text-gray-900 dark:bg-lime-300 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10 dark:focus:ring-offset-lime-600 dark:hover:bg-lime-400 dark:offset-lime-600 dark:offset-lime-600"
                     >
                       Subscribe
                     </button>

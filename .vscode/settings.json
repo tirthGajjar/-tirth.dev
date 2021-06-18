@@ -4,6 +4,7 @@
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "cSpell.words": [
+    "BLOGPOST",
     "Chauhan",
     "Comeau",
     "Gajjar",
@@ -21,6 +22,8 @@
     "gnored",
     "headlessui",
     "mapbox",
+    "networkidle",
+    "opengraph",
     "raxter",
     "rehype",
     "semibold",

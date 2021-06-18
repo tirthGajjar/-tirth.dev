@@ -7,10 +7,14 @@ import React from "react";
 interface Props {
   children: React.ReactNode;
   frontMatter: Post & { readingTime: ReadingTime };
-  ogImage: string;
+  ogImage?: string;
 }
 
-const BlogLayout: React.FC<Props> = ({ children, frontMatter, ogImage }) => {
+const BlogLayout: React.FC<Props> = ({
+  children,
+  frontMatter,
+  ogImage = "",
+}) => {
   const {
     date,
     updated,
@@ -21,14 +25,6 @@ const BlogLayout: React.FC<Props> = ({ children, frontMatter, ogImage }) => {
     cover: ignoredCover,
   } = frontMatter;
   const path = `/posts/${slug}/`;
-  //   const postUrl = `${siteConfig.url}${path}`;
-
-  //   const headerProps = {
-  //     title,
-  //     sticky: true,
-  //     collapsableOnScroll: true,
-  //     search: true,
-  //   };
 
   return (
     <Container>
@@ -40,11 +36,11 @@ const BlogLayout: React.FC<Props> = ({ children, frontMatter, ogImage }) => {
         date={date}
         updated={updated}
       />
-      <div className="flex">
+      <div className="prose flex pt-20">
         <p>{format(new Date(Date.parse(date)), "MMMM d, yyyy")}</p>
         <p> / {readingTime.text} / </p>
       </div>
-      <article className="mx-auto max-w-4xl dark:prose-light md:prose-lg lg:prose-xl prose dark:prose-light prose-purple md:prose-lg lg:prose-xl">
+      <article className="prose mx-auto max-w-4xl dark:prose-light md:prose-lg lg:prose-xl lg:prose-xl prose-purple">
         {children}
       </article>
     </Container>
