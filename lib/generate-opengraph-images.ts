@@ -1,8 +1,9 @@
 /* eslint-disable no-console */
 // https://phiilu.com/generate-open-graph-images-for-your-static-next-js-site
+import chromium from "chrome-aws-lambda";
 import { createHash } from "crypto";
 import fs from "fs";
-import playwright from "playwright-aws-lambda";
+import playwright from "playwright-core";
 import qs from "qs";
 
 type OgImageParams = Record<string, string | undefined>;
@@ -29,7 +30,11 @@ const getOgImage = async (params: OgImageParams): Promise<string> => {
     .update(params.title as string)
     .digest("hex");
 
-  const browser = await playwright.launchChromium({ headless: true });
+  const browser = await playwright.chromium.launch({
+    args: chromium.args,
+    executablePath: await chromium.executablePath,
+    headless: chromium.headless,
+  });
   const ogImageDir = `./public/static/og`;
   const imagePath = `${ogImageDir}/${hash}.png`;
   const publicPath = `/static/og/${hash}.png`;

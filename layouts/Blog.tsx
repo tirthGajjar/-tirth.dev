@@ -36,7 +36,7 @@ const BlogLayout: React.FC<Props> = ({
         date={date}
         updated={updated}
       />
-      <div className="prose flex pt-20">
+      <div className="prose flex pt-20 mx-auto w-full max-w-4xl dark:prose-light md:prose-lg lg:prose-xl lg:prose-xl">
         <p>{format(new Date(Date.parse(date)), "MMMM d, yyyy")}</p>
         <p> / {readingTime.text} / </p>
       </div>
