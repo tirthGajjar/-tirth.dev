@@ -40,18 +40,16 @@ export const LinkPreview: React.FC<IProps> = ({
   });
   const src = `https://api.microlink.io/?${params}`;
   return (
-    <Popover as="span">
-      <span
-        ref={setReferenceElement}
-        role="link"
-        tabIndex={0}
-        onFocus={() => delay(() => setShow(true), 500)}
-        onBlur={() => delay(() => setShow(false), 500)}
-        onMouseEnter={() => delay(() => setShow(true), 500)}
-        onMouseLeave={() => delay(() => setShow(false), 500)}
-      >
-        {children}
-      </span>
+    <Popover
+      as="span"
+      role="link"
+      tabIndex={0}
+      onFocus={() => delay(() => setShow(true), 500)}
+      onBlur={() => delay(() => setShow(false), 500)}
+      onMouseEnter={() => delay(() => setShow(true), 500)}
+      onMouseLeave={() => delay(() => setShow(false), 500)}
+    >
+      <span ref={setReferenceElement}>{children}</span>
       {show && (
         <Popover.Panel
           static
@@ -62,7 +60,7 @@ export const LinkPreview: React.FC<IProps> = ({
           <Transition
             show={show}
             appear={true}
-            className="rounded-xl shadow-xl max-h-[270px]"
+            className="rounded-xl shadow-xl max-h-[180px]"
             enter="transform transition duration-300 origin-bottom ease-out"
             enterFrom="opacity-0 translate-y-2 scale-0"
             enterTo="opacity-100 translate-y-0 scale-100"

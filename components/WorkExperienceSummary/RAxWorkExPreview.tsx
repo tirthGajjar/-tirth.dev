@@ -123,7 +123,7 @@ export const RAxWorkEx = () => {
                     <Highlight preset="SNOW_MINT">
                       achieved 4 nines of availability,
                     </Highlight>
-                    improved scalability and achieved
+                    improved scalability and
                     <Highlight
                       preset="CINDERELLA"
                       className="text-lg font-semibold"

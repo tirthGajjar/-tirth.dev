@@ -59,7 +59,10 @@ function Intro(): ReactElement {
                 </span>
               </RoughNotation>
               I work as the Product Architect at{" "}
-              <Link href="https://www.linkedin.com/company/rax-labs/">
+              <Link
+                href="https://www.linkedin.com/company/rax-labs/"
+                showPreview={false}
+              >
                 RAx Labs Inc.
               </Link>{" "}
               on product <Link href="https://raxter.io">raxter.io</Link>. I

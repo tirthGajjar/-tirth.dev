@@ -13,3 +13,11 @@
 ## Inspirations
 
 https://www.delbaoliveira.com/blog/frontend-challenge
+
+## Uses
+
+1. NextJS 11
+2. TailwindCSS with JIT
+3. AXE for accessibility checks
+4. `use-sound` react-hook by Josh Comeau
+5. Husky git hooks with lint-staged

@@ -1,8 +1,9 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const NewsLetter = () => {
   return (
-    <div className="py-16 select-none sm:py-24">
+    <div className="py-16 sm:py-24">
       <div className="relative sm:py-16">
         <div aria-hidden="true" className="hidden sm:block">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl dark:bg-gray-900" />
@@ -40,63 +41,76 @@ const NewsLetter = () => {
           </svg>
         </div>
         <div className="px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="overflow-hidden relative py-10 px-6 bg-indigo-600 rounded-2xl shadow-xl dark:bg-lime-400 sm:px-12 sm:py-20">
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
-            >
-              <svg
-                className="absolute inset-0 w-full h-full"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 1463 360"
+          <Tilt
+            className="z-10 rounded-2xl"
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.8}
+            glarePosition="all"
+            glareColor="#F9A8D4"
+          >
+            <div className="overflow-hidden relative py-10 px-6 bg-indigo-600 rounded-2xl shadow-xl dark:bg-lime-400 sm:px-12 sm:py-20">
+              <div className="absolute inset-0 z-30 w-full h-full rounded-xl" />
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
               >
-                <path
-                  className="text-indigo-500 text-opacity-40 dark:text-opacity-40 dark:text-lime-200"
-                  fill="currentColor"
-                  d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
-                />
-                <path
-                  className="text-indigo-700 text-opacity-40 dark:text-opacity-40 dark:text-lime-500"
-                  fill="currentColor"
-                  d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
-                />
-              </svg>
-            </div>
-            <div className="relative">
-              <div className="sm:text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
-                  Become a better full-stack developer.
-                </h2>
-                <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold text-gray-200 dark:text-gray-800">
-                  Learn more about serverless technologies, AWS, react, NextJS
-                  and more.
-                </p>
+                <svg
+                  className="absolute inset-0 w-full h-full"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 1463 360"
+                >
+                  <path
+                    className="text-indigo-500 text-opacity-40 dark:text-opacity-40 dark:text-lime-200"
+                    fill="currentColor"
+                    d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
+                  />
+                  <path
+                    className="text-indigo-700 text-opacity-40 dark:text-opacity-40 dark:text-lime-500"
+                    fill="currentColor"
+                    d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
+                  />
+                </svg>
               </div>
-              <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
-                <div className="flex-1 min-w-0">
-                  <label htmlFor="cta_email">
-                    <span className="sr-only">Email address</span>
-                    <input
-                      id="cta_email"
-                      type="email"
-                      className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:offset-lime-600 dark:offset-lime-600"
-                      placeholder="Enter your email"
-                    />
-                  </label>
+              <div className="relative">
+                <div className="sm:text-center">
+                  <h2 className="text-3xl font-bold tracking-tight text-white dark:text-black sm:text-4xl">
+                    Become a better full-stack developer.
+                  </h2>
+                  <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold text-gray-200 dark:text-gray-800">
+                    Learn more about serverless technologies, AWS, react, NextJS
+                    and more.
+                  </p>
                 </div>
-                <div className="mt-4 sm:mt-0 sm:ml-3">
-                  <button
-                    type="submit"
-                    className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow dark:text-gray-900 dark:bg-lime-300 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:offset-lime-600 sm:px-10 dark:hover:bg-lime-400 dark:offset-lime-600"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
+                <form
+                  action="#"
+                  className="relative z-30 mt-12 sm:mx-auto sm:max-w-lg sm:flex"
+                >
+                  <div className="flex-1 min-w-0">
+                    <label htmlFor="cta_email">
+                      <span className="sr-only">Email address</span>
+                      <input
+                        id="cta_email"
+                        type="email"
+                        className="block py-3 px-5 w-full text-base placeholder-gray-500 text-gray-900 rounded-md border border-transparent shadow-sm dark:offset-lime-600 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 dark:focus:ring-offset-lime-600 dark:offset-lime-600"
+                        placeholder="Enter your email"
+                      />
+                    </label>
+                  </div>
+                  <div className="mt-4 sm:mt-0 sm:ml-3">
+                    <button
+                      type="submit"
+                      className="block py-3 px-5 w-full text-base font-medium text-white bg-indigo-500 rounded-md border border-transparent shadow sm:px-10 dark:offset-lime-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 hover:bg-indigo-400 dark:focus:ring-offset-lime-600 dark:hover:bg-lime-400 dark:text-gray-900 dark:bg-lime-300 dark:offset-lime-600"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
+          </Tilt>
         </div>
       </div>
     </div>
