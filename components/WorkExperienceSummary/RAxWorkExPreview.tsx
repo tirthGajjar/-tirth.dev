@@ -3,6 +3,7 @@ import { Link } from "@/components/base/Link";
 import { Pill } from "@/components/base/Pill";
 import Image from "next/image";
 import { HiArrowNarrowRight, HiLink } from "react-icons/hi";
+import Tilt from "react-parallax-tilt";
 import { Highlight } from "../base/Highlight/Highlight";
 
 export const RAxWorkEx = () => {
@@ -54,15 +55,23 @@ export const RAxWorkEx = () => {
           </div>
           <div className="relative mx-auto max-w-md md:px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
-            <div className="overflow-hidden relative w-full h-96 rounded-2xl shadow-xl">
-              <Image
-                className="object-cover absolute inset-0 w-full h-full"
-                src={RAxCoverImage}
-                alt=""
-                layout="fill"
-                placeholder="blur"
-              />
-            </div>
+            <Tilt
+              className="rounded-xl"
+              tiltReverse={true}
+              scale={1.25}
+              tiltAngleXInitial={0}
+              tiltAngleYInitial={10}
+            >
+              <div className="overflow-hidden relative w-full h-96 rounded-2xl shadow-xl">
+                <Image
+                  className="object-cover absolute inset-0 w-full h-full"
+                  src={RAxCoverImage}
+                  alt=""
+                  layout="fill"
+                  placeholder="blur"
+                />
+              </div>
+            </Tilt>
           </div>
         </div>
 
