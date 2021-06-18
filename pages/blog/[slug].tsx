@@ -1,16 +1,12 @@
 import MDXComponents from "@/components/MDX";
 import BlogLayout from "@/layouts/Blog";
 import { PostType } from "@/types/posts";
-import getOgImage from "lib/generate-opengraph-images";
 import { getFileBySlug, getFiles } from "lib/mdx";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { MDXRemote } from "next-mdx-remote";
 import { useRouter } from "next/router";
 
-const Blog = ({
-  post,
-  ogImage,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Blog = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { isFallback } = useRouter();
 
   if (isFallback || !post) {
@@ -18,7 +14,7 @@ const Blog = ({
   }
 
   return (
-    <BlogLayout frontMatter={post.frontMatter} ogImage={ogImage}>
+    <BlogLayout frontMatter={post.frontMatter}>
       <MDXRemote
         {...post.mdxSource}
         components={{
@@ -47,13 +43,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const post = await getFileBySlug(PostType.BLOGPOST, params?.slug as string);
-
-    const ogImage = await getOgImage({
-      title: post.frontMatter.title,
-      background: post.frontMatter.colorFeatured,
-      color: post.frontMatter.fontFeatured,
-    });
-    return { props: { post, ogImage } };
+    return { props: { post } };
   } catch (error) {
     // eslint-disable-next-line
     console.log(error);
