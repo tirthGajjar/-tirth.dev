@@ -36,11 +36,15 @@ const BlogLayout: React.FC<Props> = ({
         date={date}
         updated={updated}
       />
-      <div className="prose flex pt-20 mx-auto w-full max-w-4xl dark:prose-light md:prose-lg lg:prose-xl lg:prose-xl">
-        <p>{format(new Date(Date.parse(date)), "MMMM d, yyyy")}</p>
-        <p> / {readingTime.text} / </p>
+      <div className="prose pt-20 mx-auto w-full max-w-4xl dark:prose-light md:prose-lg lg:prose-xl">
+        <h1>{title}</h1>
+        <div className="flex flex-row space-x-2 text-base font-medium lg:text-lg dark:text-lime-200 text-indigo-400">
+          <span>{format(new Date(Date.parse(date)), "MMMM d, yyyy")}</span>
+          <span>{"/"}</span>
+          <span>{readingTime.text}</span>
+        </div>
       </div>
-      <article className="prose mx-auto max-w-4xl dark:prose-light md:prose-lg lg:prose-xl lg:prose-xl prose-purple">
+      <article className="prose mx-auto max-w-4xl dark:prose-light md:prose-lg lg:prose-xl prose-purple">
         {children}
       </article>
     </Container>
