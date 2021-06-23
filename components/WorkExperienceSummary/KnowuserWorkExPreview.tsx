@@ -30,24 +30,23 @@ export const KnowuserWorkEx = () => {
             </div>
 
             <div className="mt-6 space-y-6 text-gray-700 dark:text-indigo-100">
-              <p className="text-sm text-gray-600 dark:text-gray-200">
+              <p className="text-gray-600 dark:text-gray-200">
                 <Link
                   href="https://knowuser.com"
                   className="font-semibold underline dark:text-white"
                 >
                   Knowuser
                 </Link>{" "}
-                is a framework and tool to solve problems with in-app user
-                engagement, aimed at providing all growth hacking tools at a
-                single place. Taking actions based on users&apos; behavior is
-                still a difficult problem today, Knowuser is aimed at
-                streamlining this process.
+                is a user engagement framework to empower product managers not
+                only to understand in-app user engagement but to target specific
+                users to engage, onboard, educate about product features and
+                gather feedback - all from one place.
               </p>
 
               <div className="space-y-4">
                 <div>
                   <Link
-                    href="/work/knowuser"
+                    href="/work/Knowuser"
                     className="block w-full font-semibold text-indigo-500 no-underline rounded-l rounded-r-full dark:text-white sm:text-base lg:text-sm xl:text-base hover:text-indigo-700"
                   >
                     <Pill>Co-Founder</Pill>
@@ -89,7 +88,7 @@ export const KnowuserWorkEx = () => {
    </dl> */}
             <div className="mt-10">
               <Link
-                href="/work/knowuser"
+                href="/work/Knowuser"
                 className="inline-flex items-center text-base font-medium text-indigo-600 dark:text-lime-300"
               >
                 Learn more about my work at Knowuser
