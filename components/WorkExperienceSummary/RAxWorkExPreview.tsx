@@ -68,7 +68,6 @@ export const RAxWorkEx = () => {
                   src={RAxCoverImage}
                   alt=""
                   layout="fill"
-                  placeholder="blur"
                 />
               </div>
             </Tilt>

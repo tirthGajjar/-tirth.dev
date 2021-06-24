@@ -105,6 +105,8 @@ export const getAllFilesFrontMatter = async <T extends PostType>(
       );
       const parsedFile = matter(source);
 
+      const content = parsedFile.content;
+      parsedFile.data.readingTime = readingTime(content);
       return parsedFile.data as PostByType<T>;
     })
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));

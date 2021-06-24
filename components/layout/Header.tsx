@@ -12,10 +12,6 @@ const headerLinks = [
     label: "Blog",
     link: "/blog",
   },
-  {
-    label: "About",
-    link: "/about",
-  },
 ];
 
 const Header: React.FC = () => {
