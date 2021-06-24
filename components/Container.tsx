@@ -13,7 +13,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
   const meta = {
     title: "Tirth Gajjar – Full Stack developer, Leader and a Notion pro.",
     description: `Full Stack developer, technical architect and a human.`,
-    image: "https://leerob.io/static/images/banner.png",
+    image: "https://tirth.dev/images/banner.png",
     type: "website",
     ...customMeta,
   };
