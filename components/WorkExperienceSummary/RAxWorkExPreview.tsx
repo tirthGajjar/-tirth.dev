@@ -96,7 +96,7 @@ export const RAxWorkEx = () => {
             </div>
 
             <div className="mt-6 space-y-6 text-gray-700 dark:text-indigo-100">
-              <p className="text-sm text-gray-600 dark:text-gray-200">
+              <p className="text-gray-600 dark:text-gray-200">
                 <Link
                   href="https://raxter.io"
                   className="font-semibold underline dark:text-white"
