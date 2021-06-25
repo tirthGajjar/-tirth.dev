@@ -8,7 +8,7 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container>
       <div className="pt-20 mx-auto w-full max-w-4xl ">
-        <h1 className="mx-auto font-bold text-4xl dark:text-white text-center pt-12">
+        <h1 className="mx-auto font-bold text-4xl text-gray-900 dark:text-white text-center pt-12">
           Work in Progress
         </h1>
         <div className="flex flex-col items-center py-20 px-4 md:px-8 lg:px-0 w-full">
@@ -26,7 +26,9 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
                   </Link>
                   <div className="text-gray-400">{post?.readingTime?.text}</div>
                 </div>
-                <div className="text-gray-300">{post?.subtitle}</div>
+                <div className="dark:text-gray-300 text-gray-500">
+                  {post?.subtitle}
+                </div>
               </li>
             ))}
           </ul>
