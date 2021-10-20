@@ -153,20 +153,12 @@ const Banner: React.FC<Props> = ({ show, text, smallText = "" }) => {
               <div className="flex-shrink-0 order-3 mt-2 w-full sm:order-2 sm:mt-0 sm:w-auto">
                 <Link
                   href="/appcues"
-                  className="flex justify-center items-center py-2 px-4 text-sm font-medium text-yellow-300 bg-gray-900 rounded-md border border-transparent shadow-sm hover:bg-gray-100"
+                  className="flex justify-center items-center py-2 px-4 text-sm font-medium text-yellow-300 bg-gray-900 rounded-md border border-transparent shadow-sm hover:bg-gray-100 hover:text-gray-900"
                 >
                   Open
                 </Link>
               </div>
             </div>
-            {/* <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-2">
-              <button
-                type="button"
-                className="flex p-2 -mr-1 rounded-md hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-white"
-              >
-                <span className="sr-only">Dismiss</span>
-              </button>
-            </div> */}
           </div>
         </div>
       </div>

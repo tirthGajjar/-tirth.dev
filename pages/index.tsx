@@ -38,9 +38,9 @@ const Home: React.FC = ({ children }) => {
         <Banner
           show={
             !!sourceRef.current &&
-            sourceRef?.current?.toLowerCase() === "appcues"
+            sourceRef?.current?.toLowerCase() === "gumroad"
           }
-          text="Hey!, If you are from Appcues, I have a message for you!"
+          text="Hey!, Sahil! I have a message for you."
         />
         {children}
       </div>

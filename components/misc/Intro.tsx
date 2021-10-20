@@ -1,4 +1,3 @@
-import { Link } from "@/components/base/Link";
 import WavingHand from "@/components/misc/WavingHand";
 import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
@@ -57,23 +56,15 @@ function Intro(): ReactElement {
                 <span className="px-1.5 font-semibold text-amber-700 dark:text-lime-50">
                   leader.
                 </span>
-              </RoughNotation>
-              I work as the Product Architect at{" "}
-              <Link
-                href="https://www.linkedin.com/company/rax-labs/"
-                showPreview={false}
-              >
-                RAx Labs Inc.
-              </Link>{" "}
-              on product <Link href="https://raxter.io">raxter.io</Link>. I
-              thrive to build products and engineering teams from ground up and
-              have successfully done so over the last 3 years.
+              </RoughNotation>{" "}
+              I thrive to build products and engineering teams from ground up
+              and have successfully done so over the last 3 years.
             </p>
             <p>
               I usually talk about JavaScript/TypeScript eco-system, Serverless
               technologies & AWS. I have worked with various front-end
               frameworks, developed Chrome extensions, designed REST & GraphQL
-              APIs and have worked with different types of databases.
+              APIs and have worked with many types of databases.
             </p>
           </div>
         </RoughNotationGroup>
