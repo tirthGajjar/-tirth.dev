@@ -12,8 +12,8 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
   const router = useRouter();
   const meta = {
     title: "Tirth Gajjar – Full Stack developer, Leader and a Notion pro.",
-    description: `Full Stack developer, technical architect and a human.`,
-    image: "https://leerob.io/static/images/banner.png",
+    description: `I usually talk about JavaScript/TypeScript eco-system, Serverless technologies & AWS. I have worked with various front-end frameworks, developed Chrome extensions, designed REST & GraphQL APIs and have worked with different types of databases.`,
+    image: "https://www.tirth.dev/images/banner.png",
     type: "website",
     ...customMeta,
   };
@@ -30,7 +30,7 @@ const Container: React.FC<Props> = ({ children, ...customMeta }) => {
         <meta property="og:site_name" content="Tirth Gajjar" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        <meta name="image" property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@TirthGajjar4" />
         <meta name="twitter:title" content={meta.title} />

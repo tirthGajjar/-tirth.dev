@@ -23,10 +23,12 @@ export type Post = {
   type: PostType.BLOGPOST;
 };
 
+export type FrontMatter = Post & {
+  readingTime: ReadingTime;
+};
+
 export type FrontMatterPost = {
-  frontMatter: Post & {
-    readingTime: ReadingTime;
-  };
+  frontMatter: FrontMatter;
   tweetIDs: string[];
   mdxSource: MDXRemoteSerializeResult;
 };
@@ -46,7 +48,7 @@ export type FrontMatterSnippet = {
   mdxSource: MDXRemoteSerializeResult;
 };
 
-export type PostByType<T> = T extends PostType.BLOGPOST ? Post : Snippet;
+export type PostByType<T> = T extends PostType.BLOGPOST ? FrontMatter : Snippet;
 
 export type FrontMatterPostType<T> = T extends PostType.BLOGPOST
   ? FrontMatterPost
