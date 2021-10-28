@@ -1,11 +1,14 @@
 import { FrontMatterPostType, PostByType, PostType } from "@/types/posts";
 import fs from "fs";
 import matter from "gray-matter";
-//@ts-ignore
 import mdxPrism from "mdx-prism";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import readingTime from "reading-time";
+import remarkSlug from "remark-slug";
+import remarkAutolinkHeadings from "remark-autolink-headings";
+import remarkCodeTitles from "remark-code-titles";
+import remarkToC from "remark-toc";
 
 // import { remarkFigure } from "./remark-figure";
 // import { remarkSectionize } from "./remark-sectionize-fork";
@@ -41,12 +44,12 @@ export const getFileBySlug = async <T extends PostType>(
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [
-        require("remark-slug"),
-        require("remark-autolink-headings"),
+        remarkSlug,
+        remarkAutolinkHeadings,
+        remarkCodeTitles,
+        remarkToC,
         // remarkSectionize,
         // remarkFigure,
-        require("remark-code-titles"),
-        require("remark-toc"),
       ],
       rehypePlugins: [mdxPrism],
     },
