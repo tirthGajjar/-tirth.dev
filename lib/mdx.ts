@@ -1,6 +1,7 @@
 import { FrontMatterPostType, PostByType, PostType } from "@/types/posts";
 import fs from "fs";
 import matter from "gray-matter";
+//@ts-ignore
 import mdxPrism from "mdx-prism";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
