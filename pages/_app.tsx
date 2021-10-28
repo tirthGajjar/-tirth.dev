@@ -1,6 +1,6 @@
 import { ThemeProvider } from "next-themes";
-import { AppProps } from "next/dist/next-server/lib/router/router";
 import "../styles/global.css";
+import type { AppProps } from "next/app";
 
 const isSSR = () => typeof window === "undefined";
 
